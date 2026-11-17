@@ -1,0 +1,36 @@
+{
+  "hero": {
+    "title": "FirstPenguin®",
+    "subtitle": ""
+  },
+  "profile": {
+    "name": "권나영",
+    "englishName": "KWON NA YEONG",
+    "role": "작은 신호에서 더 나은 경험을 설계하는 UX 기획자",
+    "image": {
+      "src": "웹사이트_자료/02_프로필/프로필사진-배경확장.png",
+      "alt": "권나영 프로필 사진"
+    },
+    "school": "계원예술대학교",
+    "department": "디지털미디어디자인과",
+    "major": "기획",
+    "email": "ni9htday@gmail.com",
+    "phone": "010-4843-1286",
+    "sns": [
+      {
+        "label": "LINKEDIN",
+        "url": "https://www.linkedin.com/in/ni9htday"
+      }
+    ],
+    "behance": "",
+    "resumePdf": null,
+    "selfIntroductionPdf": null,
+    "portfolioPdf": null
+  },
+  "featuredOrder": [
+    "delight-insight-2026",
+    "floreter",
+    "naver-map"
+  ],
+  "aboutIntro": "일단, 다이빙! 치과 진료실을 넘어 기획의 바다로 모험을 떠난 권나영 입니다. 빙산 아래로 먼저 뛰어드는 퍼스트 펭귄처럼 작은 신호를 발견하고 함께 나아갈 구조를 만들겠습니다!"
+}

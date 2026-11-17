@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#f3f5f3" />
+    <meta name="description" content="기획 디지털 미디어 디자인 포트폴리오" />
+    <title>V2   Below the Surface   Portfolio</title>
+    <link rel="stylesheet" href="./src/styles.css" />
+    <link rel="stylesheet" href="./src/quiet-colors.css" />
+    <link rel="stylesheet" href="./src/storyboard-layout.css" />
+    <link rel="stylesheet" href="./src/v2-colors.css" />
+    <script defer src="./src/data/siteContent.js"></script>
+    <script defer src="./src/shared.js"></script>
+    <script defer src="./src/hero-motion.js"></script>
+    <script defer src="./src/hero-header.js"></script>
+    <script defer src="./src/catalog.js"></script>
+    <script defer src="./src/main.js"></script>
+    <script defer src="./src/hero-wordmark.js"></script>
+    <script defer src="./src/v2-project-scroll.js"></script>
+    <script defer src="./src/v2-penguin-drag.js"></script>
+  <link rel="stylesheet" href="./src/menu-states.css" />
+<script defer src="./src/home-contact.js"></script>
+  <link rel="stylesheet" href="./src/editorial-refinement.css" />
+<link rel="stylesheet" href="./src/warm-theme.css" />
+<link rel="stylesheet" href="./src/hero-refinement.css" />
+<link rel="stylesheet" href="./src/reference-layout.css" />
+<script defer src="./src/english-type.js"></script>
+</head>
+  <body class="editorial-site">
+    <a class="skip-link" href="#main">본문 바로가기</a>
+    <header class="site-header" id="top">
+      <a class="brand" href="./index-v2.html" aria-label="메인 페이지로 이동"><span class="brand-mark" aria-hidden="true">FP</span></a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="메뉴 열기"><span></span><span></span></button>
+      <nav class="site-nav" id="site-nav" aria-label="주요 메뉴">
+        <a href="./index-v2.html" aria-current="page">Home</a><a href="./profile.html">Profile</a><a href="./projects.html">Projects</a><a href="./index-v2.html#contact">Contact</a>
+      </nav>
+    </header>
+
+    <main id="main">
+      <section class="hero" id="home" aria-labelledby="hero-title">
+        <div class="hero-sticky">
+          <div class="hero-scene">
+            <div class="sky" aria-hidden="true"></div><div class="sun" aria-hidden="true"></div><div class="undersea-backdrop" aria-hidden="true"></div><div class="sea" aria-hidden="true"></div>
+            <div class="iceberg-wrap">
+              <svg class="iceberg" viewBox="0 0 800 980" role="img" aria-hidden="true" preserveAspectRatio="none">
+                <defs><linearGradient id="iceTop" x1="0" x2="1" y1="0" y2="1"><stop stop-color="#fff"/><stop offset="1" stop-color="#daddd8"/></linearGradient><linearGradient id="iceDeep" x1="0" x2="1" y1="0" y2="1"><stop stop-color="#c2c6c0"/><stop offset=".55" stop-color="#929790"/><stop offset="1" stop-color="#626761"/></linearGradient></defs>
+                <path d="M165 339 263 266 336 299 392 192 428 192 507 305 589 285 680 380 618 401 176 401Z" fill="url(#iceTop)"/>
+                <path d="M392 192 428 192 456 342 507 305 589 285 680 380 618 401 494 399Z" fill="#e1e4de"/>
+                <path d="M176 401 618 401 710 482 638 596 571 674 476 880 385 938 320 802 222 740 113 553Z" fill="url(#iceDeep)"/>
+                <path d="M176 401 342 476 385 938 320 802 222 740 113 553Z" fill="#d7dbd3" opacity=".68"/>
+                <path d="M342 476 494 399 618 401 571 674 476 880 385 938Z" fill="#91968e" opacity=".72"/>
+                <path d="M494 399 710 482 638 596 571 674 476 880Z" fill="#676d65" opacity=".42"/>
+                <path d="m222 740 98 62 65 136-94-72Z" fill="#e9ece5" opacity=".55"/>
+                <path d="M176 401 H618" fill="none" style="stroke:var(--color-ice-edge)" stroke-width="3" opacity=".65"/>
+              </svg>
+            </div>
+            <div class="ice-shelf" aria-hidden="true"></div>
+            <div class="ocean-light" aria-hidden="true"></div>
+            <svg class="surface-ripple" viewBox="0 0 1920 48" preserveAspectRatio="none" aria-hidden="true"><path d="M0 22 Q240 10 480 22 T960 22 T1440 22 T1920 22"/><path d="M0 33 Q240 23 480 33 T960 33 T1440 33 T1920 33"/></svg>
+            <div class="ocean-curtain" aria-hidden="true"></div><div class="waterline" aria-hidden="true"></div>
+            <div class="penguin" role="slider" tabindex="0" aria-label="빙산 위 펭귄 위치" aria-valuemin="8" aria-valuemax="92" aria-valuenow="69" aria-orientation="horizontal" aria-describedby="penguin-hint"><span class="penguin-body"></span><span class="penguin-belly"></span><span class="penguin-eye"></span><span class="penguin-beak"></span><span class="penguin-wing"></span><span class="penguin-foot foot-left"></span><span class="penguin-foot foot-right"></span></div>
+            <span class="penguin-hint" id="penguin-hint" role="status">펭귄을 잡고 움직여 보세요
+스크롤하면 물속으로 뛰어들어요</span><div class="bubble b1" aria-hidden="true"></div><div class="bubble b2" aria-hidden="true"></div><div class="bubble b3" aria-hidden="true"></div>
+          </div>
+          <div class="hero-copy"><h1 id="hero-title" aria-label="FirstPenguin®"><span class="wordmark-initial">F</span><span class="wordmark-rest">irst</span><span class="wordmark-initial">P</span><span class="wordmark-rest">enguin</span><sup class="wordmark-rest">®</sup></h1></div>
+          <p class="dive-caption" aria-hidden="true">DIVE<span>↓</span></p>
+          <p class="reveal-caption" aria-hidden="true">THE BIGGER PICTURE<br /><strong>보이는 것 너머까지.</strong></p>
+          <div class="hero-bottom"><span class="scroll-cue">SCROLL TO DIVE <span aria-hidden="true">↓</span></span></div>
+          <a class="reduced-link" href="#about">콘셉트 살펴보기 <span aria-hidden="true">&gt;</span></a>
+        </div>
+      </section>
+
+      <section class="content-section concept-section" id="about" aria-labelledby="about-title">
+        <p class="editorial-kicker">About</p>
+        <div class="section-heading about-story"><h2 id="about-title">두려움을 깨고 새로운 바다에 가장 먼저 뛰어드는 <span class="about-accent">퍼스트 펭귄 🐧</span></h2><div class="about-story-copy"><span class="about-detail-label">Perspective</span><p>일단, 다이빙! <strong>치과 진료실을 넘어 기획의 바다로 모험을 떠난 권나영 입니다. 빙산 아래로 먼저 뛰어드는 퍼스트 펭귄처럼 작은 신호를 발견하고 함께 나아갈 구조를 만들겠습니다!</strong></p></div></div>
+        <div class="about-invitation-row"><span class="about-detail-label">Explore</span><p class="about-invitation"> 저와 함께 헤엄칠 준비가 되셨나요?</p>
+        <a class="page-link" href="./profile.html">프로필 살펴보기 <span aria-hidden="true">&gt;</span></a>
+        </div>
+      </section>
+
+      <section class="content-section featured-section" id="featured" aria-labelledby="featured-title">
+        <p class="editorial-kicker">Selected Projects</p><div class="featured-heading"><div><h2 id="featured-title">펭귄의 대표 프로젝트</h2><a class="page-link" href="./projects.html">프로젝트 전체 보기 <span aria-hidden="true">&gt;</span></a></div><div class="featured-controls" aria-label="대표 프로젝트 탐색"><button type="button" data-featured-direction="-1" aria-label="이전 프로젝트">←</button><button type="button" data-featured-direction="1" aria-label="다음 프로젝트">→</button></div></div>
+        <p class="visually-hidden" id="featured-keyboard-help">좌우 방향키로 프로젝트를 탐색하세요. Home은 처음으로 End는 마지막으로 이동합니다.</p>
+        <div class="project-grid featured-track" id="featured-grid" tabindex="0" role="region" aria-label="대표 프로젝트 가로 목록" aria-describedby="featured-keyboard-help"></div>
+      </section>
+          <section class="content-section approach-section" id="approach" aria-labelledby="approach-title">
+        <p class="editorial-kicker">Approach</p>
+        <div class="approach-heading"><h2 id="approach-title">From signal<br /><em>to structure.</em></h2><p>관찰한 불편을 문제로 정의합니다. 근거를 바탕으로 구조를 만들고 사용자의 경험으로 다시 확인합니다.</p></div>
+        <ol class="approach-list">
+          <li><h3>작은 신호를 발견하기</h3><p>인터뷰와 앱 리뷰에서 사용자가 망설이는 이유를 살핍니다. MOA에서는 12명의 인터뷰를 바탕으로 저축 과정의 동기와 성취감을 탐색했습니다.</p></li>
+          <li><h3>함께 쓸 구조 만들기</h3><p>사용자 니즈를 정보구조와 화면 흐름으로 구체화합니다. 네이버 지도에서는 경유지 관리 기능을 하나의 바텀 시트에 모아 화면 깊이를 두 단계 줄였습니다.</p></li>
+          <li><h3>경험으로 확인하기</h3><p>프로토타입과 사용성 테스트로 설계한 흐름을 검증합니다. 네이버 지도 개선안은 세 차례의 아이트래킹 테스트를 거쳐 확인했습니다.</p></li>
+        </ol>
+        <a class="page-link" href="./details/naver-map.html?from=all">검증 과정 살펴보기 <span aria-hidden="true">&gt;</span></a>
+      </section>
+
+<section class="content-section contact-section home-contact" id="contact" aria-labelledby="home-contact-title">
+        <div class="contact-content"><p class="eyebrow">Contact</p><h2 id="home-contact-title">Let’s make<br /><em>something matter.</em></h2><p>함께 이야기를 만들어 갈 수 있기를 희망합니다!</p><div class="contact-links" data-home-contact></div></div>
+      </section>
+    </main>
+    <footer class="site-footer"><span>FIRST PENGUIN © 2026</span><span>MADE TO EXPLORE</span></footer>
+    <button class="top-button" id="top-button" type="button" aria-label="맨 위로 이동" aria-hidden="true" tabindex="-1">
+      <span class="top-button-arrow" aria-hidden="true"></span><span class="top-button-text" aria-hidden="true">TOP</span>
+    </button>
+  </body>
+</html>

@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#ffffff" />
+    <meta name="description" content="퍼스트펭귄 포트폴리오 프로젝트" />
+    <title>프로젝트   First Penguin</title>
+    <link rel="stylesheet" href="./src/styles.css" />
+    <link rel="stylesheet" href="./src/quiet-colors.css" />
+    <link rel="stylesheet" href="./src/storyboard-layout.css" />
+    <script defer src="./src/data/siteContent.js"></script>
+    <script defer src="./src/shared.js"></script>
+    <script defer src="./src/catalog.js"></script>
+    <script defer src="./src/projects.js"></script>
+  <link rel="stylesheet" href="./src/menu-states.css" />
+<link rel="stylesheet" href="./src/editorial-refinement.css" />
+<link rel="stylesheet" href="./src/warm-theme.css" />
+<link rel="stylesheet" href="./src/reference-layout.css" />
+<script defer src="./src/english-type.js"></script>
+</head>
+  <body class="projects-page editorial-site">
+    <a class="skip-link" href="#main">본문 바로가기</a>
+    <header class="site-header">
+      <a class="brand" href="./index-v2.html" aria-label="메인 페이지로 이동"><span class="brand-mark" aria-hidden="true">FP</span></a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="메뉴 열기"><span></span><span></span></button>
+      <nav class="site-nav" id="site-nav" aria-label="주요 메뉴">
+        <a href="./index-v2.html">Home</a><a href="./profile.html">Profile</a><a href="./projects.html" aria-current="page">Projects</a><a href="./index-v2.html#contact">Contact</a>
+      </nav>
+    </header>
+    <main id="main" class="inner-page">
+      <section class="content-section projects-section" aria-labelledby="projects-title">
+        <p class="editorial-kicker">Projects</p><div class="section-heading"><h1 id="projects-title">A closer<br /><em>look at the work.</em></h1></div>
+        <div class="catalog-bar"><div class="filters" role="group" aria-label="프로젝트 분류" id="project-filters"></div><p class="catalog-count" id="catalog-count" role="status" aria-live="polite"></p></div>
+        <div class="project-grid" id="project-grid" aria-live="polite"></div>
+      </section>
+    </main>
+    <footer class="site-footer"><span>FIRST PENGUIN © 2026</span><span>MADE TO EXPLORE</span></footer>
+    <button class="top-button" id="top-button" type="button" aria-label="맨 위로 이동" aria-hidden="true" tabindex="-1">
+      <span class="top-button-arrow" aria-hidden="true"></span><span class="top-button-text" aria-hidden="true">TOP</span>
+    </button>
+  </body>
+</html>

@@ -1,0 +1,20 @@
+:root {
+  --font-body: SUIT, sans-serif;
+  --font-title: Nohemi, SUIT, sans-serif;
+  --text-body: 16px;
+  --text-small: 14px;
+  --text-label: 12px;
+  --title-hero: clamp(32px, 3.5vw, 60px);
+  --title-section: clamp(28px, 2.5vw, 48px);
+  --title-page: clamp(32px, 3vw, 56px);
+  --title-card: clamp(20px, 1.4vw, 26px);
+  --space-section: clamp(64px, 7vw, 128px);
+  --space-column: clamp(24px, 3vw, 56px);
+  --surface-editorial: #fafafa;
+  --ink-editorial: #272d30;
+  --muted-editorial: #657582;
+  --line-editorial: #dce6ef;
+  --accent-editorial: #0090ff;
+  --motion-fast: 180ms;
+  --motion-ease: cubic-bezier(.22, .61, .36, 1);
+}

@@ -1,0 +1,42 @@
+node_modules/
+dist/
+build/
+.DS_Store
+
+# 배포에 필요하지 않은 작업 파일
+.openai/
+outputs/
+publish/
+tmp/
+wireframes/
+work/
+first-penguin-minimal/
+first-penguin-minimal-site.tar.gz
+*.md
+
+# 사이트가 실제로 사용하는 글꼴만 공개
+font/**
+!font/Pretendard-1/
+font/Pretendard-1/**
+!font/Pretendard-1/web/
+font/Pretendard-1/web/**
+!font/Pretendard-1/web/variable/
+font/Pretendard-1/web/variable/**
+!font/Pretendard-1/web/variable/woff2/
+font/Pretendard-1/web/variable/woff2/**
+!font/Pretendard-1/web/variable/woff2/PretendardVariable.woff2
+!font/SUIT/
+font/SUIT/**
+!font/SUIT/SUIT-Variable.woff2
+
+# 공개 화면에 표시되는 이미지와 로고만 포함
+웹사이트_자료/**
+!웹사이트_자료/02_프로필/
+웹사이트_자료/02_프로필/**
+!웹사이트_자료/02_프로필/프로필사진-배경확장.png
+!웹사이트_자료/02_프로필/로고/
+!웹사이트_자료/02_프로필/로고/**
+!웹사이트_자료/03_프로젝트/
+웹사이트_자료/03_프로젝트/**
+!웹사이트_자료/03_프로젝트/naver-map/
+!웹사이트_자료/03_프로젝트/naver-map/**

@@ -1,0 +1,29 @@
+/* 주요 색상은 여기서 관리합니다. */
+:root {
+  --color-ink: #102b3b;
+  --color-navy: #0b2b40;
+  --color-deep-sea: #081f32;
+  --color-ice-depth: #0d4264;
+  --color-shelf-light: #5da6b5;
+  --color-ice-body-light: #68b7c0;
+  --color-ice-body-center: #2f89a4;
+  --color-ice-body-dark: #1a6884;
+  --color-ice-body-shadow: #145b78;
+  --color-ocean: #237f9d;
+  --color-sky: #9edce7;
+  --color-water: #5eb9c6;
+  --color-aqua: #a8e2dc;
+  --color-ice: #c8edf1;
+  --color-ice-edge: #8fc5cc;
+  --color-mist: #e9f5f2;
+  --color-paper: #f6f7f7;
+  --color-white: #ffffff;
+  --color-surface: #f6f7f7;
+  --color-border: #d8dfe2;
+  --color-muted: #5f7079;
+  --color-warm-light: #fff5dd;
+  --color-penguin-orange: #eda65a;
+  --color-focus: #f5a65d;
+  --color-logo: #1c8e9c;
+  --color-logo-on-dark: #b9eee5;
+}

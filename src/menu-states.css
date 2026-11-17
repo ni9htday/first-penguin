@@ -1,0 +1,15 @@
+/* 모든 페이지 공통 메뉴 텍스트와 호버 상태. */
+.site-header .site-nav a,.site-header.is-over-dark .site-nav a{
+ font-size:clamp(24px,1.7vw,32px);font-weight:600;color:#9b9f9d;
+ transition:color .18s ease;
+}
+.site-header .site-nav a:hover,.site-header.is-over-dark .site-nav a:hover,
+.site-header .site-nav a:focus-visible,.site-header.is-over-dark .site-nav a:focus-visible{
+ color:#83c8c5;
+}
+.site-header .site-nav a::after,.site-header.is-over-dark .site-nav a::after{
+ color:inherit;opacity:1;
+}
+@media(max-width:767px){.site-header .site-nav a,.site-header.is-over-dark .site-nav a{font-size:26px}}
+
+.site-header .site-nav a::after,.site-header.is-over-dark .site-nav a::after{content:'>';color:inherit}
