@@ -9,7 +9,7 @@ window.siteContent = {
     "englishName": "KWON NA YEONG",
     "role": "작은 신호에서 더 나은 경험을 설계하는 UX 기획자",
     "image": {
-      "src": "웹사이트_자료/02_프로필/프로필사진-배경확장.png",
+      "src": "assets/profile.png",
       "alt": "권나영 프로필 사진"
     },
     "school": "계원예술대학교",
@@ -87,7 +87,7 @@ window.siteContent = {
       "screenId": "DE_02",
       "detailPath": "details/naver-map.html",
       "thumbnail": {
-        "src": "웹사이트_자료/03_프로젝트/naver-map/대표이미지.png",
+        "src": "assets/naver-map/cover.png",
         "alt": "네이버 지도 프로젝트 표지"
       },
       "summary": "운전 중 경유지를 추가하고 변경하는 탐색 단계를 줄이도록 네이버 지도의 UX를 개선했습니다.",
@@ -100,23 +100,23 @@ window.siteContent = {
       "storyboardId": "naver-map-sb",
       "previewPages": [
         {
-          "src": "웹사이트_자료/03_프로젝트/naver-map/본문01.png",
+          "src": "assets/naver-map/page-01.png",
           "alt": "네이버 지도 프로젝트 자료 1페이지"
         },
         {
-          "src": "웹사이트_자료/03_프로젝트/naver-map/본문02.png",
+          "src": "assets/naver-map/page-02.png",
           "alt": "네이버 지도 프로젝트 자료 2페이지"
         },
         {
-          "src": "웹사이트_자료/03_프로젝트/naver-map/본문03.png",
+          "src": "assets/naver-map/page-03.png",
           "alt": "네이버 지도 프로젝트 자료 3페이지"
         },
         {
-          "src": "웹사이트_자료/03_프로젝트/naver-map/본문04.png",
+          "src": "assets/naver-map/page-04.png",
           "alt": "네이버 지도 프로젝트 자료 4페이지"
         },
         {
-          "src": "웹사이트_자료/03_프로젝트/naver-map/본문05.png",
+          "src": "assets/naver-map/page-05.png",
           "alt": "네이버 지도 프로젝트 자료 5페이지"
         }
       ],

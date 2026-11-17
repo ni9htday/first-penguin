@@ -51,7 +51,7 @@
     "screenId": "DE_02",
     "detailPath": "details/naver-map.html",
     "thumbnail": {
-      "src": "웹사이트_자료/03_프로젝트/naver-map/대표이미지.png",
+      "src": "assets/naver-map/cover.png",
       "alt": "네이버 지도 프로젝트 표지"
     },
     "summary": "운전 중 경유지를 추가하고 변경하는 탐색 단계를 줄이도록 네이버 지도의 UX를 개선했습니다.",
@@ -64,23 +64,23 @@
     "storyboardId": "naver-map-sb",
     "previewPages": [
       {
-        "src": "웹사이트_자료/03_프로젝트/naver-map/본문01.png",
+        "src": "assets/naver-map/page-01.png",
         "alt": "네이버 지도 프로젝트 자료 1페이지"
       },
       {
-        "src": "웹사이트_자료/03_프로젝트/naver-map/본문02.png",
+        "src": "assets/naver-map/page-02.png",
         "alt": "네이버 지도 프로젝트 자료 2페이지"
       },
       {
-        "src": "웹사이트_자료/03_프로젝트/naver-map/본문03.png",
+        "src": "assets/naver-map/page-03.png",
         "alt": "네이버 지도 프로젝트 자료 3페이지"
       },
       {
-        "src": "웹사이트_자료/03_프로젝트/naver-map/본문04.png",
+        "src": "assets/naver-map/page-04.png",
         "alt": "네이버 지도 프로젝트 자료 4페이지"
       },
       {
-        "src": "웹사이트_자료/03_프로젝트/naver-map/본문05.png",
+        "src": "assets/naver-map/page-05.png",
         "alt": "네이버 지도 프로젝트 자료 5페이지"
       }
     ],

@@ -82,15 +82,15 @@ window.profileExperience = {
     ]
   ],
   "toolLogos": {
-    "Figma": "웹사이트_자료/02_프로필/로고/figma.png",
-    "Notion": "웹사이트_자료/02_프로필/로고/Notion.png",
-    "Excel": "웹사이트_자료/02_프로필/로고/Excel.png",
-    "PowerPoint": "웹사이트_자료/02_프로필/로고/PowerPoint.png",
-    "한글": "웹사이트_자료/02_프로필/로고/한글.png",
-    "ChatGPT": "웹사이트_자료/02_프로필/로고/ChatGPT.png",
-    "Codex": "웹사이트_자료/02_프로필/로고/Codex.png",
-    "Claude": "웹사이트_자료/02_프로필/로고/Claude.png",
-    "Gemini": "웹사이트_자료/02_프로필/로고/Gemini.png"
+    "Figma": "assets/tools/figma.png",
+    "Notion": "assets/tools/notion.png",
+    "Excel": "assets/tools/excel.png",
+    "PowerPoint": "assets/tools/powerpoint.png",
+    "한글": "assets/tools/hangul.png",
+    "ChatGPT": "assets/tools/chatgpt.png",
+    "Codex": "assets/tools/codex.png",
+    "Claude": "assets/tools/claude.png",
+    "Gemini": "assets/tools/gemini.png"
   },
   "awards": [
     {
