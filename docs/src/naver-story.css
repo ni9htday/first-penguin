@@ -1,0 +1,25 @@
+.editorial-site .naver-comparison, .editorial-site .naver-reflection { margin: clamp(64px, 8vw, 110px) 0; padding: clamp(22px, 4vw, 42px); background: #eff8ff; }
+.editorial-site .naver-eyebrow { margin: 0 0 16px; color: #007bd7; font-size: 11px; letter-spacing: .08em; }
+.editorial-site .naver-comparison h2, .editorial-site .naver-reflection h2 { margin: 0; font-size: clamp(22px, 2.2vw, 32px); line-height: 1.4; word-break: keep-all; }
+.editorial-site .naver-lead, .editorial-site .naver-reflection > p:last-child { margin: 15px 0 0; color: #595959; font-size: 14px; line-height: 1.8; word-break: keep-all; }
+.naver-switch { display: inline-flex; gap: 4px; margin-top: 28px; padding: 4px; border: 1px solid #c4dff2; background: white; }
+.naver-switch button { padding: 9px 16px; border: 0; background: transparent; color: #666; font: inherit; font-size: 13px; cursor: pointer; }
+.naver-switch button[aria-pressed="true"] { background: #007fdc; color: white; }
+.naver-switch button:focus-visible, .naver-step summary:focus-visible { outline: 2px solid #007fdc; outline-offset: 3px; }
+.naver-metrics { display: grid; grid-template-columns: repeat(3, minmax(0,1fr)); gap: 18px; margin-top: 32px; }
+.naver-metrics div { display: grid; align-content: start; gap: 12px; }
+.naver-metrics span { color: #626b72; font-size: 12px; line-height: 1.5; word-break: keep-all; }
+.naver-metrics strong { color: #007fdc; font-size: clamp(27px, 4vw, 46px); line-height: 1.1; font-variant-numeric: tabular-nums; }
+.naver-metrics small { margin-left: 4px; font-size: 14px; }
+.editorial-site .naver-footnote { margin: 26px 0 0; color: #697782; font-size: 11px; line-height: 1.7; }
+.naver-step { border-top: 1px solid #d7e0e8; }
+.naver-step:last-child { border-bottom: 1px solid #d7e0e8; }
+.naver-step summary { display: grid; grid-template-columns: 110px minmax(0,1fr) 20px; gap: 16px; align-items: start; padding: 22px 0; cursor: pointer; list-style: none; }
+.naver-step summary::-webkit-details-marker { display: none; }
+.naver-step summary::after { content: '+'; color: #007fdc; font-size: 20px; line-height: 1; }
+.naver-step[open] summary::after { content: '−'; }
+.naver-step summary span { color: #007fdc; font-size: 12px; }
+.naver-step summary strong { font-size: 16px; line-height: 1.5; word-break: keep-all; }
+.editorial-site .naver-step p { margin: 0 0 24px 126px; color: #595959; font-size: 14px; line-height: 1.85; word-break: keep-all; }
+.editorial-site .detail-primary-download #detail-download { display: grid; justify-items: start; gap: 10px; }
+@media (max-width: 600px) { .naver-metrics { grid-template-columns: 1fr; gap: 22px; } .naver-metrics div { gap: 5px; } .naver-step summary { grid-template-columns: 1fr 20px; gap: 8px; } .naver-step summary span { grid-column: 1 / -1; } .editorial-site .naver-step p { margin-left: 0; } }

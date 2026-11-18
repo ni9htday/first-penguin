@@ -1,0 +1,195 @@
+/* V2 only: one timeline controls every layer of the dive. */
+.editorial-site .hero{height:420svh;min-height:2800px;background:#fafafa;position:relative}
+.editorial-site .hero-sticky{height:100svh;min-height:0;--surface-level:61%;isolation:isolate;--cue-opacity:1;--light-depth:0;--scene-parallax:0}
+.editorial-site .hero-copy{top:calc(var(--header-height) + 24px);left:max(var(--page-gutter),calc((100vw - 1920px)/2 + 100px));max-width:min(65vw,980px);z-index:5;transform:translate3d(0,calc(var(--dive) * -24px),0);opacity:var(--copy-opacity);will-change:opacity}
+.editorial-site .hero h1{font-size:clamp(32px,3.5vw,60px);line-height:1.38;letter-spacing:-.045em;text-wrap:balance}
+.editorial-site .hero-subtitle{font-size:16px;line-height:1.75;max-width:35em;color:var(--ink-editorial);margin-top:22px}
+.editorial-site .sky{background:#fafafa}
+.editorial-site .sun{width:min(24vw,330px);right:12%;top:20%;background:#e8f0f7;opacity:calc(1 - var(--submerge) * 1.8);transform:translate3d(0,calc(var(--scene-parallax) * -40px),0);filter:none}
+.editorial-site .sea{top:var(--surface-level);height:150%;transform:translate3d(0,calc(var(--submerge) * -65%),0);background:linear-gradient(180deg,#c7e5ff 0%,#80bff0 28%,#317fb9 65%,#073b73 100%)}
+.editorial-site .undersea-backdrop{background:radial-gradient(ellipse at 38% -10%,#b3dbff 0%,#4594cd 42%,#073b73 100%);opacity:var(--submerge)}
+.editorial-site .ocean-curtain{top:calc(var(--surface-level) - var(--submerge) * 92%);height:155%;opacity:calc(1 - var(--submerge));background:linear-gradient(180deg,rgb(225 248 249 / 84%),rgb(128 191 240 / 96%) 6%,#4594cd 46%,#073b73);z-index:2;pointer-events:none}
+.editorial-site .waterline{top:calc(var(--surface-level) - var(--submerge) * 92%);height:3px;background:#effbfc;box-shadow:0 -3px 10px rgb(255 255 255 / 28%),0 5px 18px rgb(208 244 246 / 40%);opacity:calc(1 - var(--submerge));transform:none}
+.editorial-site .surface-ripple{position:absolute;left:0;top:calc(var(--surface-level) - var(--submerge) * 92% - 18px);width:100%;height:36px;z-index:3;fill:none;stroke:#edfafa;stroke-width:1;opacity:calc((1 - var(--submerge)) * .45);pointer-events:none}
+.editorial-site .surface-ripple path:last-child{stroke-width:.7;opacity:.5}
+.editorial-site .iceberg-wrap{width:130vw;max-width:none;left:50%;height:min(85svh,930px);top:calc(49% - var(--underwater) * 56%);transform:translate(-50%,calc(-10% - var(--underwater) * 37%)) scale(calc(1 - var(--underwater) * .10));opacity:1;pointer-events:none;z-index:1}
+.editorial-site .iceberg-body-closeup{opacity:1;z-index:1;-webkit-mask-image:linear-gradient(to bottom,transparent calc(var(--body-wipe) - 3%),#000 var(--body-wipe));mask-image:linear-gradient(to bottom,transparent calc(var(--body-wipe) - 3%),#000 var(--body-wipe));pointer-events:none}
+.editorial-site .hero-sticky.is-tip-gone .iceberg-wrap{visibility:hidden}
+.editorial-site .ocean-light{position:absolute;inset:0;z-index:3;pointer-events:none;background:linear-gradient(115deg,transparent 10%,rgb(235 255 255 / 13%) 25%,transparent 39%),linear-gradient(75deg,transparent 45%,rgb(222 253 255 / 9%) 58%,transparent 70%);opacity:var(--light-depth);transform:translate3d(0,calc(var(--scene-parallax) * -18px),0);mix-blend-mode:screen}
+.editorial-site .dive-caption{top:43%;left:50%;transform:translate(-50%,-50%);margin:0;bottom:auto;font-family:var(--font-title);font-size:clamp(24px,2.5vw,40px);font-weight:700;line-height:1.4;letter-spacing:-.035em;white-space:nowrap;color:#fff;mix-blend-mode:difference;text-shadow:none;opacity:var(--dive-label);z-index:5}
+.editorial-site .dive-caption span{display:block;margin-top:20px;font-family:var(--font-body);font-size:25px;font-weight:400;line-height:1}
+.editorial-site .reveal-caption{left:50%;bottom:10%;width:calc(100% - 48px);white-space:normal;transform:translateX(-50%);font-family:var(--font-body);font-size:12px;font-weight:500;letter-spacing:-.02em;color:#f6fdff;text-shadow:none;line-height:1.6;opacity:var(--reveal-label);z-index:5}
+.editorial-site .reveal-caption strong{font-family:var(--font-body);font-size:clamp(28px,2.7vw,46px);font-weight:600;letter-spacing:-.02em;line-height:1.4;display:block;margin-top:12px}
+.editorial-site .hero-bottom{left:var(--page-gutter);right:var(--page-gutter);bottom:24px;justify-content:center;opacity:var(--cue-opacity);pointer-events:none;color:#fff;z-index:5}
+.editorial-site .scroll-cue{font-size:11px;font-weight:500;letter-spacing:-.02em;display:flex;gap:12px;align-items:center}
+.editorial-site .scroll-cue span{font-size:22px;line-height:1}
+.editorial-site .penguin{z-index:4;touch-action:none}
+.editorial-site .penguin[aria-disabled='true']{pointer-events:none;cursor:default}
+.editorial-site .penguin-hint{z-index:6;background:#fafafa;color:var(--ink-editorial);font-size:12px;padding:8px 12px;transform:translate(-50%,calc(-100% - 75px));max-width:calc(100vw - 48px);white-space:normal;text-align:center;line-height:1.5}
+.editorial-site .bubble{border-color:rgb(211 242 248 / 55%);opacity:calc(var(--light-depth) * .7);z-index:3}
+.editorial-site .ice-shelf{top:58%;background:linear-gradient(165deg,#99cefa,#418bc5 35%,#1d5c93 70%,#073b73);z-index:1}
+.editorial-site .hero-sticky::after{height:22%;background:linear-gradient(transparent,#073b73);opacity:var(--shelf);z-index:3;pointer-events:none}
+.editorial-site .hero::after{content:'';position:absolute;bottom:0;left:0;right:0;height:80px;z-index:7;background:linear-gradient(transparent,#fafafa);pointer-events:none}
+@media(max-width:767px){
+ .editorial-site .hero{height:360svh;min-height:2200px}
+ .editorial-site .hero-sticky{--surface-level:63%}
+ .editorial-site .hero-copy{left:24px;right:24px;max-width:none}
+ .editorial-site .hero h1{font-size:clamp(25px,5.7vw,38px);line-height:1.5;letter-spacing:-.04em}
+ .editorial-site .hero-subtitle{font-size:14px;line-height:1.65;max-width:25em;margin-top:16px}
+ .editorial-site .sun{width:180px;right:-30px;top:36%}
+ .editorial-site .iceberg-wrap{width:180vw;height:80svh;top:calc(56% - var(--underwater) * 64%)}
+ .editorial-site .dive-caption{font-size:clamp(22px,5vw,32px)}
+ .editorial-site .reveal-caption{bottom:13%}
+ .editorial-site .reveal-caption strong{font-size:28px}
+ .editorial-site .hero::after{height:48px}
+}
+@media(max-height:500px){
+ .editorial-site .hero-sticky{--surface-level:72%}
+ .editorial-site .hero-copy{top:calc(var(--header-height) + 16px);max-width:72vw}
+ .editorial-site .hero h1{font-size:26px;line-height:1.35}
+ .editorial-site .hero-subtitle{font-size:13px;line-height:1.5;margin-top:12px;max-width:38em}
+ .editorial-site .sun{width:140px;right:8%;top:15%}
+ .editorial-site .reveal-caption{bottom:8%}
+ .editorial-site .reveal-caption strong{font-size:24px}
+}
+@media(prefers-reduced-motion:reduce){
+ .editorial-site .hero{height:100svh;min-height:560px}
+ .editorial-site .hero-sticky{position:relative;height:100%;--underwater:0!important;--submerge:0!important;--shelf:0!important;--dive:0!important;--body-reveal:0!important;--copy-opacity:1!important}
+ .editorial-site .iceberg-wrap{top:49%;transform:translate(-50%,-10%);visibility:visible}
+ .editorial-site .sea{transform:none}
+ .editorial-site .sun{opacity:1;transform:none}
+ .editorial-site .iceberg-body-closeup,.editorial-site .ocean-curtain,.editorial-site .ocean-light,.editorial-site .undersea-backdrop,.editorial-site .dive-caption,.editorial-site .reveal-caption{display:none}
+ .editorial-site .hero::after,.editorial-site .hero-sticky::after{display:none}
+ .editorial-site .hero-bottom{display:none}
+ .editorial-site .reduced-link{display:inline-flex;left:var(--page-gutter);bottom:24px;background:#fafafa;color:var(--ink-editorial);border:0;font-family:var(--font-body);font-size:14px;padding:8px 0}
+}
+
+/* A single iceberg remains attached to its own water surface at every frame. */
+.editorial-site .iceberg-wrap,
+.editorial-site .hero-sticky.is-tip-gone .iceberg-wrap{
+ left:var(--ice-left);top:var(--ice-top);width:var(--ice-width);height:var(--ice-height);
+ transform:none;transform-origin:0 0;visibility:visible;opacity:1;max-width:none;
+ filter:none;
+}
+.editorial-site .sea{top:var(--surface-y);transform:none;height:200%}
+.editorial-site .waterline,.editorial-site .ocean-curtain{top:var(--surface-y)}
+.editorial-site .surface-ripple{top:calc(var(--surface-y) - 18px)}
+.editorial-site .iceberg-body-closeup{display:none}
+.editorial-site .hero::after{height:min(80px,8svh)}
+@media(prefers-reduced-motion:reduce){
+ .editorial-site .iceberg-wrap{left:var(--ice-left);top:var(--ice-top);width:var(--ice-width);height:var(--ice-height);transform:none}
+}
+
+/* Keep the destination in document flow so it cannot cover the penguin. */
+.editorial-site #about{position:relative;margin-top:0;min-height:70svh;box-sizing:border-box;background:#fafafa;display:flex;flex-direction:column;justify-content:center;padding-top:calc(var(--header-height) + 32px);padding-bottom:48px;clip-path:none}
+.editorial-site .site-header{transition:transform .3s ease,background-color .25s ease}
+.editorial-site .site-header.is-scroll-hidden{transform:translateY(-110%);pointer-events:none}
+.editorial-site .surface-ripple path{animation:quiet-water 7s ease-in-out infinite;transform-origin:center}
+.editorial-site .surface-ripple path:last-child{animation-delay:-3.5s;animation-direction:reverse}
+.editorial-site .ocean-light{background-size:130% 100%;animation:quiet-light 12s ease-in-out infinite alternate}
+@keyframes quiet-water{0%,100%{transform:translateX(-2%) scaleX(1.06)}50%{transform:translateX(2%) scaleX(1.02)}}
+@keyframes quiet-light{from{background-position:0% 50%}to{background-position:100% 50%}}
+@media(max-width:767px){.editorial-site #about{padding-top:calc(var(--header-height) + 24px);padding-bottom:32px}}
+@media(prefers-reduced-motion:reduce){
+ .editorial-site #about{margin-top:0;min-height:auto;clip-path:none;display:block}
+ .editorial-site #about .section-heading,.editorial-site #about .concept-statement{transform:none;opacity:1}
+ .editorial-site .surface-ripple path,.editorial-site .ocean-light{animation:none}
+ .editorial-site .site-header{transition:none}
+}
+/* Maintain a clear ocean accent on light content surfaces. */
+.editorial-site .site-header:not(.is-over-dark) .brand-mark{color:var(--color-logo)}
+.editorial-site .site-header:not(.is-over-dark) .menu-toggle{background:var(--color-logo);color:#fff}
+.editorial-site .site-header:not(.is-over-dark) .menu-toggle span{background:#fff}
+.editorial-site .site-header:not(.is-over-dark) .menu-toggle:hover,.editorial-site .site-header:not(.is-over-dark) .menu-toggle:focus-visible{background:#073b73}
+/* Keep the profile label and arrow inside one compact hit area. */
+.editorial-site a.page-link[href='./profile.html']{width:fit-content;max-width:100%;align-self:flex-start;justify-content:center;gap:12px;padding:10px 16px;min-height:44px;border:1px solid var(--line-editorial);background:transparent;color:var(--ink-editorial);transition:background .18s ease,color .18s ease,border-color .18s ease}
+.editorial-site a.page-link[href='./profile.html'] span{color:inherit;flex:none;pointer-events:none}
+.editorial-site a.page-link[href='./profile.html']:hover,.editorial-site a.page-link[href='./profile.html']:focus-visible{background:var(--accent-editorial);border-color:var(--accent-editorial);color:#fafafa}
+@media(prefers-reduced-motion:reduce){.editorial-site a.page-link[href='./profile.html']{transition:none}}
+
+.editorial-site .penguin-hint{background:var(--color-ice);border:1px solid var(--color-ice-edge);white-space:pre-line;width:max-content;max-width:calc(100vw - 48px);padding:10px 16px;color:var(--ink-editorial);line-height:1.65}
+
+/* Water meets ice through filled surfaces without a drawn boundary. */
+.editorial-site .waterline,.editorial-site .surface-ripple{display:none}
+.editorial-site .iceberg,.editorial-site .iceberg path{stroke:none!important;stroke-width:0}
+
+/* Blend the surface layers rather than cutting both at the same pixel. */
+.editorial-site .sea{top:calc(var(--surface-y) - 48px);-webkit-mask-image:linear-gradient(to bottom,transparent,#000 96px);mask-image:linear-gradient(to bottom,transparent,#000 96px)}
+.editorial-site .ocean-curtain{top:calc(var(--surface-y) - 48px);background:linear-gradient(to bottom,transparent 0,rgb(199 229 255 / 55%) 48px,rgb(128 191 240 / 90%) 140px,#4594cd 46%,#073b73);-webkit-mask-image:linear-gradient(to bottom,transparent,#000 96px);mask-image:linear-gradient(to bottom,transparent,#000 96px)}
+.editorial-site .hero-scene::after{content:'';position:absolute;left:0;right:0;top:calc(var(--surface-y) - 48px);height:96px;z-index:2;pointer-events:none;background:linear-gradient(to bottom,transparent,rgb(199 229 255 / 45%),transparent);-webkit-backdrop-filter:blur(8px);backdrop-filter:blur(8px);-webkit-mask-image:linear-gradient(to bottom,transparent,#000 35%,#000 65%,transparent);mask-image:linear-gradient(to bottom,transparent,#000 35%,#000 65%,transparent);opacity:calc(1 - var(--submerge))}
+
+/* Pointer dragging needs no focus rectangle; keyboard navigation retains one. */
+.editorial-site .penguin,.editorial-site .penguin *,.editorial-site .penguin-hint{-webkit-user-select:none;user-select:none;-webkit-user-drag:none}
+.editorial-site .penguin:focus:not(:focus-visible),.editorial-site .hero-sticky.is-penguin-dragging .penguin:focus{outline:none;box-shadow:none}
+.editorial-site .penguin:focus-visible{outline:2px solid var(--accent-editorial);outline-offset:6px}
+
+/* Center the underwater message away from the following white section. */
+.editorial-site .reveal-caption{top:52%;bottom:auto;left:50%;transform:translate(-50%,-50%);margin:0}
+@media(max-width:767px){.editorial-site .reveal-caption{top:50%;bottom:auto}}
+@media(max-height:500px){.editorial-site .reveal-caption{top:48%;bottom:auto}}
+
+/* Intro group above; statement and page CTA share the following row. */
+.editorial-site #about{display:grid;grid-template-columns:minmax(0,1fr) auto;column-gap:48px;row-gap:0;align-content:center;justify-content:normal;align-items:center}
+.editorial-site #about .editorial-kicker{grid-column:1/-1;margin-bottom:24px}
+.editorial-site #about .section-heading{grid-column:1/-1;display:flex;gap:16px;margin:0 0 56px}
+.editorial-site #about .section-heading h2{margin:0;line-height:1.15}
+.editorial-site #about .section-heading p{margin:0;max-width:52em}
+.editorial-site #about .concept-statement{grid-column:1;margin:0;max-width:unset}
+.editorial-site #about .page-link{grid-column:2;grid-row:3;align-self:center;justify-self:end;margin:0}
+.editorial-site .hero h1{line-height:1.15}
+.editorial-site .hero-subtitle{margin-top:12px;line-height:1.6}
+@media(max-width:600px){
+ .editorial-site #about{grid-template-columns:1fr;column-gap:0}
+ .editorial-site #about .section-heading{margin-bottom:40px}
+ .editorial-site #about .page-link{grid-column:1;grid-row:4;justify-self:start;margin-top:24px}
+}
+.editorial-site .dive-caption{line-height:1.15}
+.editorial-site .dive-caption span{margin-top:6px;line-height:1}
+.editorial-site #about .about-story h2{font-family:var(--font-body);font-size:clamp(26px,2.6vw,42px);max-width:28em;line-height:1.45}
+.editorial-site #about .about-story-copy{max-width:50em;display:grid;gap:12px;margin-top:8px}
+.editorial-site #about .about-story-copy p{font-size:16px;line-height:1.85}
+.editorial-site .about-invitation{display:block;font-size:16px;font-weight:400;margin-top:16px}
+.editorial-site .about-profile{grid-column:1/-1;margin-top:40px;padding-top:24px;border-top:1px solid var(--line-editorial)}
+.editorial-site .about-profile strong{font-size:24px;font-weight:600}
+.editorial-site .about-profile p{margin:8px 0 0;font-size:15px;color:var(--muted-editorial)}
+
+/* Place the hint above the center of the penguin rather than beside its head. */
+.editorial-site .penguin-hint{left:var(--penguin-x);top:var(--penguin-y);transform:translate(-50%,calc(-100% - 84px))}
+@media(max-width:767px){.editorial-site .penguin-hint{transform:translate(-50%,calc(-100% - 64px))}}
+.editorial-site #about .about-accent{color:var(--accent-editorial)}
+.editorial-site #about .about-story-copy{display:block;margin-top:4px}
+.editorial-site #about .about-story-copy p{line-height:1.6;margin:0}
+.editorial-site #about .concept-statement{grid-column:1/-1}
+.editorial-site #about .about-invitation-row{grid-column:1/-1;display:flex;align-items:center;gap:24px;flex-wrap:wrap;margin-top:16px}
+.editorial-site #about .about-invitation{margin:0;font-size:16px;line-height:1.6}
+.editorial-site #about .about-invitation-row .page-link{margin:0;align-self:center}
+
+/* About closing: statement left, invitation and CTA stacked right. */
+.editorial-site #about{grid-template-columns:minmax(0,1fr) minmax(0,1fr);column-gap:48px}
+.editorial-site #about .concept-statement{grid-column:1;grid-row:3;align-self:start}
+.editorial-site #about .about-invitation-row{grid-column:2;grid-row:3;display:flex;flex-direction:column;align-items:flex-start;gap:24px;margin-top:0;align-self:start}
+.editorial-site #about .about-invitation-row .page-link{align-self:flex-start;margin:0}
+@media(max-width:600px){
+ .editorial-site #about{grid-template-columns:1fr}
+ .editorial-site #about .about-invitation-row{grid-column:1;grid-row:4;margin-top:24px;gap:16px}
+}
+
+/* Keep the closing invitation next to the statement at a fixed 24px gap. */
+.editorial-site #about{grid-template-columns:max-content minmax(0,1fr);column-gap:24px}
+.editorial-site #about .concept-statement{width:max-content;max-width:100%}
+.editorial-site #about .about-invitation-row{justify-self:start}
+@media(max-width:600px){.editorial-site #about{grid-template-columns:1fr}.editorial-site #about .concept-statement{width:auto}}
+
+/* Anchor the hint to measured bounds, including the penguin's facing transform. */
+.editorial-site .penguin-hint{right:auto;bottom:auto;margin:0;transform:translate(-50%,-100%)}
+.editorial-site .hero-sticky.is-penguin-arrived .penguin-wing{animation:arrival-paddle .85s ease-in-out infinite alternate;transform-origin:70% 10%}
+@keyframes arrival-paddle{from{transform:rotate(18deg)}to{transform:rotate(-65deg)}}
+@media(prefers-reduced-motion:reduce){.editorial-site .hero-sticky.is-penguin-arrived .penguin-wing{animation:none}}
+
+/* A brief splash acknowledges a tap without interfering with dragging. */
+.editorial-site .penguin-splash{position:absolute;z-index:7;width:48px;height:48px;border:2px solid #80c7ff;border-radius:50%;pointer-events:none;animation:penguin-splash .7s ease-out forwards}
+.editorial-site .penguin-splash::before,.editorial-site .penguin-splash::after{content:'';position:absolute;width:7px;height:7px;border-radius:50%;background:#80c7ff;top:0;left:4px}
+.editorial-site .penguin-splash::after{left:auto;right:2px;top:28px}
+@keyframes penguin-splash{from{transform:translate(-50%,-50%) scale(.3);opacity:1}to{transform:translate(-50%,-65%) scale(2);opacity:0}}
+@media(prefers-reduced-motion:reduce){.editorial-site .penguin-splash{display:none}}
+.editorial-site #about .about-invitation-row{grid-column:1/-1;grid-row:3;justify-self:start;align-items:flex-start;text-align:left;margin:0;gap:24px}

@@ -1,0 +1,137 @@
+/* 넓은 읽기 영역은 중립색, 브랜드와 선택 상태는 기존 팔레트 사용. */
+body,
+.concept-section,
+.featured-section,
+.projects-section,
+.info-section {
+  background: var(--color-white);
+  color: var(--color-ink);
+}
+
+.featured-section,
+.projects-section,
+.contact-section {
+  border-top: 1px solid var(--color-border);
+}
+
+.document-card,
+.info-section .document-card,
+.profile-panel,
+.inner-page .project-card,
+.project-card,
+.empty-state {
+  background: var(--color-white);
+  color: var(--color-ink);
+  border: 1px solid var(--color-border);
+}
+
+.document-card:not(.is-pending):hover,
+.info-section .document-card:not(.is-pending):hover {
+  background: var(--color-surface);
+}
+
+.profile-panel,
+.profile-visual,
+.project-visual,
+.inner-page .project-visual,
+.inner-page .project-card-pending .project-visual {
+  background: var(--color-surface);
+}
+
+.profile-symbol,
+.empty-symbol {
+  color: var(--color-muted);
+}
+
+.project-placeholder-art {
+  color: var(--color-muted);
+}
+
+.doc-label,
+.is-pending .doc-action,
+.profile-pending p,
+.profile-list dt,
+.project-meta,
+.inner-page .project-card-pending .project-info h2,
+.empty-state p {
+  color: var(--color-muted);
+}
+
+.profile-list,
+.empty-state {
+  border-color: var(--color-border);
+}
+
+.filter-button {
+  background: var(--color-white);
+  color: var(--color-ink);
+  border-color: var(--color-border);
+}
+
+.filter-button[aria-pressed="true"] {
+  background: var(--color-navy);
+  border-color: var(--color-navy);
+  color: var(--color-white);
+}
+
+.contact-section {
+  background: var(--color-surface);
+  color: var(--color-ink);
+}
+
+.contact-content .eyebrow,
+.contact-content > p:not(.eyebrow),
+.contact-pending {
+  color: var(--color-muted);
+}
+
+.contact-links a,
+.contact-pending {
+  border-color: var(--color-border);
+}
+
+.contact-links a:hover {
+  background: var(--color-navy);
+  color: var(--color-white);
+}
+
+.contact-orbit {
+  color: var(--color-border);
+}
+
+.site-footer {
+  background: var(--color-white);
+  color: var(--color-muted);
+  border-color: var(--color-border);
+}
+
+.site-header .site-nav,
+.site-header.is-over-dark .site-nav {
+  background: var(--color-ink);
+  color: var(--color-border);
+}
+
+.top-button {
+  background: var(--color-navy);
+  color: var(--color-white);
+}
+
+.top-button:hover {
+  background: var(--color-ink);
+}
+
+.profile-page .site-header.is-over-dark {
+  color: var(--color-ink);
+}
+
+.profile-page .site-header.is-over-dark .brand-mark {
+  color: var(--color-logo);
+}
+
+.profile-page .site-header.is-over-dark .menu-toggle {
+  background: var(--color-logo);
+}
+
+.profile-page .site-header.is-over-dark .menu-toggle span {
+  background: var(--color-white);
+}

@@ -1,0 +1,525 @@
+[
+  {
+    "id": "moa",
+    "name": "MOA",
+    "title": "2030세대 목표 달성형 소셜 금융 서비스 MOA",
+    "kind": "project",
+    "categories": [
+      "service-planning"
+    ],
+    "keywords": [
+      "기획서"
+    ],
+    "screenId": "DE_01",
+    "detailPath": "details/moa.html",
+    "thumbnail": null,
+    "summary": "저축 목표의 진행 상황을 보여주고 소셜 동기부여와 AI 추천으로 실천을 돕는 금융 앱 서비스",
+    "period": "2026.03.03~2026.06.09",
+    "role": "서비스 전체 기획",
+    "tools": "",
+    "pdfPath": "",
+    "featured": false,
+    "hasStoryboard": false,
+    "storyboardId": "",
+    "participation": "서비스 전체를 단독 기획하고 사용자 12명의 인터뷰를 분석했습니다.\n목표 설정과 저축 과정의 정보구조를 정리하고 사용자 흐름과 기능 우선순위를 설계했습니다.\n실루엣 대시보드와 소셜 스크랩과 스폰서 펀딩과 AI 목표 큐레이션을 정의하고 와이어프레임을 제작했습니다.",
+    "reflection": "",
+    "process": "시장과 경쟁 서비스 분석: 2030세대 저축 시장을 살피고 3C와 SWOT 분석으로 서비스 방향을 정리했습니다.\n사용자 조사: 심층 인터뷰 12건에서 저축을 시작하거나 중단한 이유와 재시작 계기를 분석했습니다.\n문제 정의: 페르소나와 사용자 여정 지도와 HMW로 핵심 문제를 구체화했습니다.\n서비스 설계: 진행 상황 시각화와 소셜 기능과 AI 추천을 사용자 문제에 연결하고 화면 흐름을 설계했습니다.",
+    "skills": "사용자 문제 구조화 / 기능 우선순위 설정 / 금융 앱 정보구조 설계",
+    "projectType": "3인 팀 프로젝트 / 서비스 기획 전체 담당",
+    "designPoints": [],
+    "year": 2026,
+    "award": "2026 제32회 커뮤니케이션 디자인 국제 어워드 디지털미디어디자인 부문 입선",
+    "shortIntro": "저축 목표 시각화와 실천을 돕는 금융 앱 서비스 기획",
+    "introduction": "저축 목표를 세우지만 장기적으로 실천을 지속하기 어려운 2030세대를 위한 서비스입니다. 숫자와 잔액 중심의 화면에서는 목표 진행 상황을 체감하기 어렵고 저축을 중단한 뒤 다시 시작할 계기도 부족했습니다. 사용자 12명의 심층 인터뷰를 바탕으로 목표 시각화와 소셜 동기부여와 AI 추천을 연결했습니다.",
+    "results": [
+      "사용자 12명의 인터뷰를 핵심 기능과 와이어프레임에 연결했습니다.",
+      "2026 제32회 커뮤니케이션 디자인 국제 어워드 디지털미디어디자인 부문 입선."
+    ],
+    "contentDraft": false
+  },
+  {
+    "id": "naver-map",
+    "name": "네이버 지도",
+    "title": "네이버 지도 경유지 변경 UX 개선",
+    "kind": "project",
+    "categories": [
+      "service-improvement"
+    ],
+    "keywords": [
+      "리뉴얼"
+    ],
+    "screenId": "DE_02",
+    "detailPath": "details/naver-map.html",
+    "thumbnail": {
+      "src": "웹사이트_자료/03_프로젝트/naver-map/대표이미지.png",
+      "alt": "네이버 지도 프로젝트 표지"
+    },
+    "summary": "운전 중 경유지 추가와 변경에 필요한 탐색 단계와 수행 시간을 줄인 모바일 내비게이션 UX 개선",
+    "period": "2026.03.05~2026.06.11",
+    "role": "사용자 흐름 분석과 아이트래킹 검증 및 개선안 설계",
+    "tools": "",
+    "pdfPath": "",
+    "featured": true,
+    "hasStoryboard": true,
+    "storyboardId": "naver-map-sb",
+    "previewPages": [
+      {
+        "src": "웹사이트_자료/03_프로젝트/naver-map/본문01.png",
+        "alt": "네이버 지도 프로젝트 자료 1페이지"
+      },
+      {
+        "src": "웹사이트_자료/03_프로젝트/naver-map/본문02.png",
+        "alt": "네이버 지도 프로젝트 자료 2페이지"
+      },
+      {
+        "src": "웹사이트_자료/03_프로젝트/naver-map/본문03.png",
+        "alt": "네이버 지도 프로젝트 자료 3페이지"
+      },
+      {
+        "src": "웹사이트_자료/03_프로젝트/naver-map/본문04.png",
+        "alt": "네이버 지도 프로젝트 자료 4페이지"
+      },
+      {
+        "src": "웹사이트_자료/03_프로젝트/naver-map/본문05.png",
+        "alt": "네이버 지도 프로젝트 자료 5페이지"
+      }
+    ],
+    "participation": "앱 리뷰와 사용자 흐름을 분석하고 아이트래킹 참가자 모집과 시선 데이터 분석을 진행했습니다.\n경쟁 내비게이션과 우수 UX 사례를 비교해 개선 방향을 도출했습니다.\n경유지 관리 바텀 시트의 페이퍼 프로토타입과 디지털 프로토타입을 제작하고 화면설계서로 구체화했습니다.",
+    "reflection": "",
+    "process": "문제 분석: 사용자 리뷰와 경유지 기능의 탐색 흐름을 검토했습니다.\n사용성 조사: 동일 참가자 5명을 대상으로 총 3회 아이트래킹을 진행해 시선 이동과 탐색 단계와 수행 시간을 비교했습니다.\n개선안 설계: 경유지 정보구조를 재정리하고 관리 기능을 하나의 바텀 시트로 통합했습니다.\n반복 검증: 문제 확인 1회와 개선안 검증 2회로 기존안과 개선안을 비교했습니다.",
+    "skills": "행동 데이터 해석 / 사용성 검증 설계 / 정보구조 개선",
+    "projectType": "2인 팀 프로젝트",
+    "designPoints": [],
+    "year": 2026,
+    "award": "2026 제32회 커뮤니케이션 디자인 국제 어워드 기획 제안서 부문 입선",
+    "shortIntro": "운전 중 경유지 추가와 변경 흐름 개선을 위한 내비게이션 UX 리뉴얼",
+    "introduction": "경유지 기능이 여러 화면과 단계에 분산돼 운전 중 반복 탐색과 판단이 필요한 문제를 분석했습니다. 앱 리뷰와 사용자 흐름을 검토하고 아이트래킹으로 탐색 과정을 확인했습니다. 경유지 관리 기능을 하나의 바텀 시트로 통합해 불필요한 화면 이동과 선택 단계를 줄였습니다.",
+    "results": [
+      "동일 참가자 5명 비교에서 평균 수행 시간이 63.6초에서 21.8초로 줄었습니다. 표준편차는 11.7에서 5.0으로 줄었습니다.",
+      "의사결정 포인트는 23회에서 0회로 줄었습니다.",
+      "학기 우수작으로 선정돼 학과 연합 PT에서 발표했습니다.",
+      "2026 제32회 커뮤니케이션 디자인 국제 어워드 기획 제안서 부문 입선."
+    ],
+    "contentDraft": false
+  },
+  {
+    "id": "floreter",
+    "name": "플로레터",
+    "title": "플로레터 Flo-letter",
+    "kind": "project",
+    "categories": [
+      "service-planning"
+    ],
+    "keywords": [
+      "기획서"
+    ],
+    "screenId": "DE_03",
+    "detailPath": "details/floreter.html",
+    "thumbnail": null,
+    "summary": "과천 화훼단지의 꽃과 분재 상품을 공직 사회의 선물 수요에 연결한 O2O 모바일 선물 서비스",
+    "period": "2026.03.04~2026.06.10",
+    "role": "팀 리딩과 공급자 및 사용자 조사",
+    "tools": "",
+    "pdfPath": "",
+    "featured": true,
+    "hasStoryboard": true,
+    "storyboardId": "floreter-sb",
+    "contentDraft": false,
+    "participation": "3인 팀을 이끌며 과천 화훼단지 현장 관찰과 공급자 및 사용자 조사를 진행했습니다.\n농원과 난원 운영자 3명과 일반 방문객 2명의 심층 인터뷰를 분석해 사용자 유형과 핵심 요구를 정리했습니다.\n선물 탐색 서비스의 정보구조와 주요 기능을 기획하고 와이어프레임과 화면설계서와 스토리보드를 제작했습니다.",
+    "reflection": "",
+    "process": "현장 조사: 과천 화훼단지의 실제 판매 환경을 관찰했습니다.\n인터뷰 분석: 운영자 3명과 방문객 2명의 인터뷰를 친화도 분석으로 정리했습니다.\n시장 분석: 시장과 산업 구조를 살피고 3C와 SWOT 및 경쟁 사례와 포지셔닝을 분석했습니다.\n서비스 설계: 페르소나와 사용자 여정과 카드 소팅을 바탕으로 정보구조와 플로우차트를 구성했습니다.\n화면 구체화: 이용 시나리오와 와이어프레임과 화면설계서로 선물 탐색부터 전달까지의 흐름을 정리했습니다.",
+    "skills": "현장 조사와 인터뷰 분석 / 서비스 구조화 / UX 설계",
+    "projectType": "3인 팀 프로젝트 / 팀 리딩과 서비스 기획",
+    "designPoints": [],
+    "award": "2026 제32회 커뮤니케이션 디자인 국제 어워드 기획 제안서 부문 회장상",
+    "shortIntro": "과천 화훼단지와 공직 사회의 선물 수요를 연결하는 O2O 서비스 기획",
+    "year": 2026,
+    "introduction": "과천 지역 공무원과 공직 사회의 선물 수요자를 위한 O2O 모바일 서비스입니다. 상품과 가격 중심의 탐색만으로는 관계와 상황에 맞는 선물을 고르기 어려웠습니다. 화훼단지 현장 조사와 공급자 및 방문객 인터뷰를 바탕으로 관계와 상황과 전달 목적에 따라 선물을 찾는 구조를 제안했습니다.",
+    "results": [
+      "현장 조사에서 확인한 공급자와 사용자의 요구를 선물 탐색 구조에 반영했습니다.",
+      "학기 우수작으로 선정돼 학과 연합 PT에서 발표했습니다.",
+      "2026 제32회 커뮤니케이션 디자인 국제 어워드 기획 제안서 부문 회장상."
+    ]
+  },
+  {
+    "id": "delight-insight-2026",
+    "name": "DELIGHT INSIGHT 2026",
+    "title": "DELIGHT INSIGHT 2026 온오프라인 통합 브랜딩",
+    "kind": "project",
+    "categories": [
+      "service-planning"
+    ],
+    "keywords": [
+      "브랜딩"
+    ],
+    "screenId": "DE_04",
+    "detailPath": "details/delight-insight-2026.html",
+    "thumbnail": null,
+    "summary": "전시 공간과 웹사이트와 SNS를 연결해 관람 전후의 경험을 설계하는 졸업전시 브랜딩",
+    "period": "2026.09.01~2026.11.22",
+    "role": "브랜딩팀원 / 본부 총무팀장",
+    "tools": "",
+    "pdfPath": "",
+    "featured": true,
+    "hasStoryboard": true,
+    "storyboardId": "delight-insight-2026-sb",
+    "contentDraft": false,
+    "participation": "브랜딩팀원으로 졸업전시 브랜딩과 홍보 콘텐츠의 기획 및 제작을 지원합니다.\n전시 웹 서비스와 오프라인 관람 경험을 설계하고 안내 정보를 정리하며 팀 간 일정을 조율합니다.\n본부 총무팀장으로 예산과 행정 업무와 운영 자원을 관리합니다.",
+    "reflection": "",
+    "process": "기획 과제 설정: 관람객 이해와 매체별 경험을 중심으로 전시의 방향을 정리합니다.\n리서치: 유사 전시 사례와 졸업전시 관람객 설문으로 참여와 기록과 재탐색 요구를 확인합니다.\n브랜드 설계: 졸업생 설문에서 개성과 연결과 생성이라는 핵심 키워드를 도출합니다.\n경험 연결: 작품 탐색과 현장 참여와 관람 이후의 재탐색이 이어지는 접점을 설계합니다.",
+    "skills": "관람 경험 기획 / 콘텐츠 기획 / 운영 관리",
+    "projectType": "졸업전시 브랜딩 프로젝트",
+    "designPoints": [],
+    "year": 2026,
+    "shortIntro": "전시 공간부터 웹사이트와 SNS까지 연결하는 졸업전시 브랜딩",
+    "introduction": "계원예술대학교 디지털미디어디자인과 졸업전시를 위한 통합 브랜딩 프로젝트입니다. 관람 목적이 다른 방문객들이 작품을 발견하고 현장에서 참여하며 관람 후에도 기록을 다시 탐색할 수 있도록 전시 공간과 웹사이트와 SNS와 인쇄 매체를 연결합니다. 졸업생 설문에서 도출한 개성과 연결과 생성을 브랜드의 핵심 키워드로 정리했습니다."
+  },
+  {
+    "id": "storyway-plus",
+    "name": "스토리웨이플러스",
+    "title": "코레일유통 스토리웨이플러스 앱(APP) 고도화 및 유지관리 용역 제안서",
+    "kind": "project",
+    "categories": [
+      "proposal"
+    ],
+    "keywords": [
+      "제안서"
+    ],
+    "screenId": "DE_05",
+    "detailPath": "details/storyway-plus.html",
+    "thumbnail": null,
+    "summary": "스토리웨이플러스의 사용 경험을 살펴보고 개선 방향을 제안합니다. 사용자가 목적에 도달하는 과정에서 필요한 정보를 중심으로 내용을 구성합니다.",
+    "period": "",
+    "role": "",
+    "tools": "",
+    "pdfPath": "",
+    "featured": false,
+    "hasStoryboard": false,
+    "storyboardId": "",
+    "contentDraft": true,
+    "participation": "사용자의 목표를 기준으로 내용을 정리합니다. 핵심 기능과 화면별 정보를 연결해 자연스럽게 다음 행동으로 이어지는 흐름을 구성합니다.",
+    "reflection": "사용자가 무엇을 먼저 확인해야 하는지에 따라 정보의 우선순위가 달라집니다. 작은 선택에서도 맥락이 이어지도록 설계를 점검합니다.",
+    "process": [
+      "사용 상황과 목표를 정리하고 해결할 문제의 범위를 좁힙니다.",
+      "핵심 정보를 구분한 뒤 화면 흐름과 세부 구성을 정리합니다.",
+      "사용 흐름을 따라가며 필요한 상태와 예외 상황을 검토합니다."
+    ],
+    "skills": "문제 정의 정보 구성 화면 흐름 검토",
+    "projectType": "UX 프로젝트",
+    "designPoints": [],
+    "shortIntro": "스토리웨이플러스 사용 흐름 분석과 정보구조 개선 제안"
+  },
+  {
+    "id": "rocket-fresh",
+    "name": "로켓프레시",
+    "title": "사용자 탐색 불편 해결을 위한 로켓프레시 리뉴얼",
+    "kind": "project",
+    "categories": [
+      "service-improvement"
+    ],
+    "keywords": [
+      "리뉴얼"
+    ],
+    "screenId": "DE_06",
+    "detailPath": "details/rocket-fresh.html",
+    "thumbnail": null,
+    "summary": "신선식품 탐색과 비교 과정의 불편을 분석하고 상품 탐색 구조를 개선한 로켓프레시 리뉴얼",
+    "period": "2025년 2학기",
+    "role": "시장 환경 분석과 설문조사 양식 제작",
+    "tools": "",
+    "pdfPath": "",
+    "featured": false,
+    "hasStoryboard": true,
+    "storyboardId": "rocket-fresh-sb",
+    "contentDraft": false,
+    "participation": "시장 환경을 분석하고 로켓프레시 웹사이트 리뉴얼을 위한 설문조사 양식을 제작했습니다.\n사용자의 이용 빈도와 주요 기능 등 행동 특성을 기준으로 조사 항목과 배포 범위를 정리했습니다.",
+    "reflection": "",
+    "process": "현황 분석: 서비스 목적과 기존 사이트의 장점과 탐색 문제를 정리했습니다.\n설문조사: 2025.11.10~11.13에 수집한 117명의 응답으로 사용자 요구를 도출했습니다.\n비교 분석: 3C와 SWOT 및 벤치마킹과 포지셔닝 분석으로 개선 방향을 검토했습니다.\n개선안 제안: 할인과 특가는 상단에 배치하고 테마별 추천과 배너는 하단에 구성해 정보 흐름을 단순화했습니다.",
+    "skills": "시장 환경 분석 / 사용자 설문 설계 / 상품 탐색 구조 개선",
+    "projectType": "팀 프로젝트",
+    "designPoints": [],
+    "year": 2025,
+    "shortIntro": "신선식품 탐색과 비교 편의를 높이는 상품 탐색 구조 리뉴얼",
+    "introduction": "로켓프레시 웹사이트의 복잡한 카테고리와 일관되지 않은 UI를 살피고 신선식품 탐색과 비교 과정의 불편을 분석했습니다. 사용자 117명의 설문 응답으로 요구를 정리하고 벤치마킹과 포지셔닝 분석을 거쳐 메인화면의 정보 흐름을 단순화하는 개선안을 제안했습니다."
+  },
+  {
+    "id": "choan-club",
+    "name": "초안 동아리",
+    "title": "학과 기획 동아리 초안 활동 보고서",
+    "kind": "project",
+    "categories": [
+      "report"
+    ],
+    "keywords": [
+      "보고서"
+    ],
+    "screenId": "DE_07",
+    "detailPath": "details/choan-club.html",
+    "thumbnail": null,
+    "summary": "학과 일정과 행사 소식을 학생들에게 전달하는 기획 동아리 운영",
+    "period": "2025.09~2026.12",
+    "role": "2026.03부터 회장 / 총괄 매니저",
+    "tools": "",
+    "pdfPath": "",
+    "featured": false,
+    "hasStoryboard": false,
+    "storyboardId": "",
+    "contentDraft": false,
+    "participation": "학과 일정과 행사 공지를 위한 콘텐츠를 기획하고 게시 일정을 관리합니다.\n동아리 인스타그램을 운영하며 학과 소식과 행사 안내 게시물을 발행합니다.\n구성원의 역할을 분담하고 제작 일정을 조율하며 게시물 피드백을 관리합니다.",
+    "reflection": "",
+    "process": "콘텐츠 계획: 학과 일정과 행사에 맞춰 안내 내용을 정리합니다.\n제작 운영: 구성원 역할과 제작 일정을 조율합니다.\n게시 관리: 게시물을 발행하고 피드백을 반영합니다.",
+    "skills": "콘텐츠 기획 / 게시 일정 관리 / 구성원 역할 조율",
+    "projectType": "동아리 활동",
+    "designPoints": [],
+    "year": 2026,
+    "shortIntro": "학과 일정과 행사 안내를 위한 기획 동아리 콘텐츠 제작 및 운영",
+    "introduction": "학과 일정과 행사 소식을 인스타그램으로 전달하는 기획 동아리입니다. 2025년 9월부터 활동하며 2026년 3월부터 회장과 총괄 매니저를 맡아 콘텐츠 제작과 운영을 관리합니다."
+  },
+  {
+    "id": "aim-ai-club",
+    "name": "AI 동아리 AIM",
+    "title": "AI 동아리 AIM 활동 보고서",
+    "kind": "project",
+    "categories": [
+      "report"
+    ],
+    "keywords": [
+      "보고서"
+    ],
+    "screenId": "DE_08",
+    "detailPath": "details/aim-ai-club.html",
+    "thumbnail": null,
+    "summary": "생성형 AI와 바이브 코딩으로 웹 제작 방법을 실습하고 공유하는 동아리 활동",
+    "period": "2026.09~2026.12",
+    "role": "부회장",
+    "tools": "",
+    "pdfPath": "",
+    "featured": false,
+    "hasStoryboard": false,
+    "storyboardId": "",
+    "contentDraft": false,
+    "participation": "동아리 일정과 공지를 관리하고 구성원 의견을 수렴해 조율합니다.\n웹 제작 교육의 주제와 콘텐츠 기획을 지원합니다.\n바이브 코딩 기반 웹 앱 제작 교육을 운영하고 실습 질문과 피드백을 공유합니다.",
+    "reflection": "",
+    "process": "교육 준비: 웹 제작 실습의 주제와 콘텐츠를 정리합니다.\n실습 운영: 바이브 코딩 기반 웹 앱 제작 교육을 지원합니다.\n피드백 공유: 구성원의 질문을 정리하고 제작 과정의 피드백을 나눕니다.",
+    "skills": "교육 콘텐츠 기획 / 실습 운영 / 구성원 의견 조율",
+    "projectType": "동아리 활동",
+    "designPoints": [],
+    "year": 2026,
+    "shortIntro": "생성형 AI와 바이브 코딩 기반 웹 제작 실습 및 피드백 공유",
+    "introduction": "생성형 AI와 바이브 코딩으로 웹페이지와 웹 앱을 만들고 제작 방법을 실습하는 동아리입니다. 부회장으로 활동하며 교육 운영과 구성원 간 의견 공유를 지원합니다."
+  },
+  {
+    "id": "naver-map-sb",
+    "name": "네이버 지도 스토리보드",
+    "title": "네이버 지도 스토리보드",
+    "kind": "storyboard",
+    "categories": [
+      "storyboard"
+    ],
+    "keywords": [
+      "스토리보드"
+    ],
+    "screenId": "SB_01",
+    "detailPath": "details/naver-map-sb.html",
+    "thumbnail": null,
+    "summary": "경유지 기능이 여러 화면과 단계에 분산돼 운전 중 반복 탐색과 판단이 필요한 문제를 분석했습니다. 앱 리뷰와 사용자 흐름을 검토하고 아이트래킹으로 탐색 과정을 확인했습니다. 경유지 관리 기능을 하나의 바텀 시트로 통합해 불필요한 화면 이동과 선택 단계를 줄였습니다.",
+    "period": "",
+    "role": "",
+    "tools": "",
+    "pdfPath": "",
+    "featured": false,
+    "sourceProject": "네이버 지도 경유지 변경 UX 개선",
+    "sourceId": "naver-map",
+    "hasStoryboard": false,
+    "contentDraft": false,
+    "participation": "",
+    "reflection": "",
+    "process": [],
+    "skills": "",
+    "projectType": "화면설계서",
+    "designPoints": [
+      "경유지 관리 기능을 하나의 바텀 시트로 통합합니다.",
+      "불필요한 화면 이동과 선택 단계를 줄이는 흐름을 구성합니다."
+    ],
+    "introduction": "경유지 기능이 여러 화면과 단계에 분산돼 운전 중 반복 탐색과 판단이 필요한 문제를 분석했습니다. 앱 리뷰와 사용자 흐름을 검토하고 아이트래킹으로 탐색 과정을 확인했습니다. 경유지 관리 기능을 하나의 바텀 시트로 통합해 불필요한 화면 이동과 선택 단계를 줄였습니다.",
+    "shortIntro": "경유지 관리 화면의 정보구조와 이동 흐름 설계 스토리보드"
+  },
+  {
+    "id": "floreter-sb",
+    "name": "플로레터 스토리보드",
+    "title": "플로레터 스토리보드",
+    "kind": "storyboard",
+    "categories": [
+      "storyboard"
+    ],
+    "keywords": [
+      "스토리보드"
+    ],
+    "screenId": "SB_02",
+    "detailPath": "details/floreter-sb.html",
+    "thumbnail": null,
+    "summary": "과천 지역 공무원과 공직 사회의 선물 수요자를 위한 O2O 모바일 서비스입니다. 상품과 가격 중심의 탐색만으로는 관계와 상황에 맞는 선물을 고르기 어려웠습니다. 화훼단지 현장 조사와 공급자 및 방문객 인터뷰를 바탕으로 관계와 상황과 전달 목적에 따라 선물을 찾는 구조를 제안했습니다.",
+    "period": "",
+    "role": "",
+    "tools": "",
+    "pdfPath": "",
+    "featured": false,
+    "sourceProject": "플로레터 Flo-letter",
+    "sourceId": "floreter",
+    "hasStoryboard": false,
+    "contentDraft": false,
+    "participation": "",
+    "reflection": "",
+    "process": [],
+    "skills": "",
+    "projectType": "화면설계서",
+    "designPoints": [
+      "관계와 상황과 전달 목적을 기준으로 선물을 탐색하는 흐름을 정리합니다.",
+      "사용자 시나리오에 따라 선물 탐색부터 전달까지의 화면 흐름을 구성합니다."
+    ],
+    "introduction": "과천 지역 공무원과 공직 사회의 선물 수요자를 위한 O2O 모바일 서비스입니다. 상품과 가격 중심의 탐색만으로는 관계와 상황에 맞는 선물을 고르기 어려웠습니다. 화훼단지 현장 조사와 공급자 및 방문객 인터뷰를 바탕으로 관계와 상황과 전달 목적에 따라 선물을 찾는 구조를 제안했습니다.",
+    "shortIntro": "관계와 상황별 선물 탐색 흐름 설계 스토리보드"
+  },
+  {
+    "id": "delight-insight-2026-sb",
+    "name": "DELIGHT INSIGHT 2026 스토리보드",
+    "title": "DELIGHT INSIGHT 2026 스토리보드",
+    "kind": "storyboard",
+    "categories": [
+      "storyboard"
+    ],
+    "keywords": [
+      "스토리보드"
+    ],
+    "screenId": "SB_03",
+    "detailPath": "details/delight-insight-2026-sb.html",
+    "thumbnail": null,
+    "summary": "계원예술대학교 디지털미디어디자인과 졸업전시를 위한 통합 브랜딩 프로젝트입니다. 관람 목적이 다른 방문객들이 작품을 발견하고 현장에서 참여하며 관람 후에도 기록을 다시 탐색할 수 있도록 전시 공간과 웹사이트와 SNS와 인쇄 매체를 연결합니다. 졸업생 설문에서 도출한 개성과 연결과 생성을 브랜드의 핵심 키워드로 정리했습니다.",
+    "period": "",
+    "role": "",
+    "tools": "",
+    "pdfPath": "",
+    "featured": false,
+    "sourceProject": "DELIGHT INSIGHT 2026 온오프라인 통합 브랜딩",
+    "sourceId": "delight-insight-2026",
+    "hasStoryboard": false,
+    "contentDraft": false,
+    "participation": "",
+    "reflection": "",
+    "process": [],
+    "skills": "",
+    "projectType": "화면설계서",
+    "designPoints": [
+      "관심 작품을 분야별로 탐색하고 상세 정보를 확인하는 흐름을 정리합니다.",
+      "관람 이후에도 작품과 전시 기록을 다시 탐색할 수 있는 접점을 연결합니다."
+    ],
+    "introduction": "계원예술대학교 디지털미디어디자인과 졸업전시를 위한 통합 브랜딩 프로젝트입니다. 관람 목적이 다른 방문객들이 작품을 발견하고 현장에서 참여하며 관람 후에도 기록을 다시 탐색할 수 있도록 전시 공간과 웹사이트와 SNS와 인쇄 매체를 연결합니다. 졸업생 설문에서 도출한 개성과 연결과 생성을 브랜드의 핵심 키워드로 정리했습니다.",
+    "shortIntro": "졸업전시 웹사이트의 작품 탐색 화면 설계 스토리보드"
+  },
+  {
+    "id": "rocket-fresh-sb",
+    "name": "로켓프레시 스토리보드",
+    "title": "로켓프레시 스토리보드",
+    "kind": "storyboard",
+    "categories": [
+      "storyboard"
+    ],
+    "keywords": [
+      "스토리보드"
+    ],
+    "screenId": "SB_04",
+    "detailPath": "details/rocket-fresh-sb.html",
+    "thumbnail": null,
+    "summary": "로켓프레시 웹사이트의 복잡한 카테고리와 일관되지 않은 UI를 살피고 신선식품 탐색과 비교 과정의 불편을 분석했습니다. 사용자 117명의 설문 응답으로 요구를 정리하고 벤치마킹과 포지셔닝 분석을 거쳐 메인화면의 정보 흐름을 단순화하는 개선안을 제안했습니다.",
+    "period": "",
+    "role": "",
+    "tools": "",
+    "pdfPath": "",
+    "featured": false,
+    "sourceProject": "사용자 탐색 불편 해결을 위한 로켓프레시 리뉴얼",
+    "sourceId": "rocket-fresh",
+    "hasStoryboard": false,
+    "contentDraft": false,
+    "participation": "",
+    "reflection": "",
+    "process": [],
+    "skills": "",
+    "projectType": "화면설계서",
+    "designPoints": [
+      "할인과 특가를 상단에 배치하고 테마별 추천과 배너를 하단에 구성합니다.",
+      "상품 탐색과 비교에 필요한 정보를 중심으로 메인화면의 정보 흐름을 단순화합니다."
+    ],
+    "introduction": "로켓프레시 웹사이트의 복잡한 카테고리와 일관되지 않은 UI를 살피고 신선식품 탐색과 비교 과정의 불편을 분석했습니다. 사용자 117명의 설문 응답으로 요구를 정리하고 벤치마킹과 포지셔닝 분석을 거쳐 메인화면의 정보 흐름을 단순화하는 개선안을 제안했습니다.",
+    "shortIntro": "신선식품 탐색을 위한 로켓프레시 메인화면 설계 스토리보드"
+  },
+  {
+    "id": "notion-sb",
+    "name": "노션 스토리보드",
+    "title": "노션 스토리보드",
+    "kind": "storyboard",
+    "categories": [
+      "storyboard"
+    ],
+    "keywords": [
+      "스토리보드"
+    ],
+    "screenId": "SB_05",
+    "detailPath": "details/notion-sb.html",
+    "thumbnail": null,
+    "summary": "프로젝트 자료를 준비하고 있습니다.",
+    "shortIntro": "자료 준비 중",
+    "introduction": "프로젝트 자료를 준비하고 있습니다.",
+    "period": "",
+    "role": "",
+    "tools": "",
+    "pdfPath": "",
+    "featured": false,
+    "hasStoryboard": false,
+    "storyboardId": "",
+    "participation": "",
+    "reflection": "",
+    "process": [],
+    "skills": "",
+    "projectType": "",
+    "designPoints": [],
+    "award": "",
+    "results": [],
+    "contentDraft": false,
+    "pending": true
+  },
+  {
+    "id": "first-penguin-web",
+    "name": "FIRST PENGUIN 웹사이트",
+    "title": "FIRST PENGUIN 웹사이트",
+    "kind": "project",
+    "categories": [
+      "service-planning"
+    ],
+    "keywords": [
+      "웹사이트"
+    ],
+    "screenId": "DE_09",
+    "detailPath": "details/first-penguin-web.html",
+    "thumbnail": null,
+    "summary": "프로젝트 자료를 준비하고 있습니다.",
+    "shortIntro": "자료 준비 중",
+    "introduction": "프로젝트 자료를 준비하고 있습니다.",
+    "period": "",
+    "role": "",
+    "tools": "",
+    "pdfPath": "",
+    "featured": false,
+    "hasStoryboard": false,
+    "storyboardId": "",
+    "participation": "",
+    "reflection": "",
+    "process": [],
+    "skills": "",
+    "projectType": "",
+    "designPoints": [],
+    "award": "",
+    "results": [],
+    "contentDraft": false,
+    "pending": true
+  }
+]

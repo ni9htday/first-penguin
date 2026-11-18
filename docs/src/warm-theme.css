@@ -1,0 +1,199 @@
+/* One ocean accent with neutral surfaces. Shared by all editorial pages. */
+:root{
+ --color-ink:#272d30;--color-navy:#272d30;--color-deep-sea:#0090ff;
+ --color-white:#fafafa;--color-paper:#fafafa;--color-mist:#fafafa;
+ --color-surface:#f0f5fa;--color-border:#dce6ef;--color-muted:#657582;
+ --color-logo:#0090ff;--color-logo-on-dark:#fafafa;--color-focus:#0090ff;
+ --color-warm-light:#e8f0f7;--color-penguin-orange:#657582;
+}
+.editorial-site .brand-mark{color:var(--color-logo)}
+.editorial-site .site-header.is-over-dark .brand-mark{color:var(--color-logo-on-dark)}
+.editorial-site .site-header .menu-toggle{background:var(--color-logo)}
+.editorial-site .site-header.is-over-dark .menu-toggle{background:var(--color-logo-on-dark)}
+.editorial-site .site-header .site-nav{background:#272d30}
+.editorial-site .site-header .site-nav a{color:#dce6ef}
+.editorial-site .site-header .site-nav a:hover,.editorial-site .site-header .site-nav a:focus-visible{color:#80c7ff}
+.editorial-site .profile-details,.editorial-site .profile-links{color:var(--color-ink)}
+.editorial-site .sun{background:#e8f0f7}
+.editorial-site .top-button{background:#f0f5fa;color:#0090ff}
+.editorial-site .top-button:hover{background:#e5f3ff}
+.editorial-site .document-card[aria-disabled='true']{cursor:default}
+.editorial-site .document-card[aria-disabled='true'] .doc-action{color:var(--color-muted);font-weight:400}
+/* Neutral paper with blue water throughout the dive sequence. */
+:root{
+ --surface-editorial:#fafafa;
+ --color-white:#fafafa;--color-paper:#fafafa;--color-sky:#fafafa;
+ --color-water:#c7e5ff;--color-ocean:#459fdf;
+ --color-ice-depth:#0090ff;--color-shelf-light:#80c7ff;
+ --color-ice-body-light:#b3dbff;--color-ice-body-center:#5b9cd1;
+ --color-ice-body-dark:#2b70a8;--color-ice-body-shadow:#164b7a;
+ --color-aqua:#e5f3ff;--color-ice:#eaf6ff;--color-ice-edge:#b8ddff;
+}
+.editorial-site .sky{background:#fafafa}
+.editorial-site .sea{background:linear-gradient(180deg,#c7e5ff,#459fdf 55%,#0090ff)}
+.editorial-site .waterline{background:#edf7ff;box-shadow:0 8px 20px rgb(213 243 245 / 35%)}
+.editorial-site .iceberg #iceTop stop:first-child{stop-color:#f5fbff}
+.editorial-site .iceberg #iceTop stop:last-child{stop-color:#dcefff}
+.editorial-site .iceberg #iceDeep stop:first-child{stop-color:#b8ddff}
+.editorial-site .iceberg #iceDeep stop:nth-child(2){stop-color:#80b7e2}
+.editorial-site .iceberg #iceDeep stop:last-child{stop-color:#3b7eb5}
+.editorial-site .iceberg>path:nth-of-type(2){fill:#e8f6ff}
+.editorial-site .iceberg>path:nth-of-type(4){fill:#d6ebff}
+.editorial-site .iceberg>path:nth-of-type(5){fill:#80b7e2}
+.editorial-site .iceberg>path:nth-of-type(6){fill:#4788bb}
+.editorial-site .iceberg-body-closeup>path:nth-of-type(4){fill:#e5f3ff}
+.editorial-site .iceberg-body-closeup>path:nth-of-type(5){fill:#a3ceef}
+
+/* The mascot keeps its own natural colors within the restrained UI palette. */
+:root{--color-penguin-orange:#efa957}
+.editorial-site .penguin-body{background:#102d3d;box-shadow:inset -10px -6px 0 #071e2c}
+.editorial-site .penguin-belly{background:#f7f8ee}
+.editorial-site .penguin-wing{background:#14384a}
+.editorial-site .penguin-foot{background:#efa957}
+.editorial-site .penguin-beak{border-left-color:#efa957}
+.editorial-site .penguin:not([aria-disabled='true']) .penguin-body{animation:penguin-breathe 3.8s ease-in-out infinite;transform-origin:50% 95%}
+.editorial-site .penguin:not([aria-disabled='true']) .penguin-wing{animation:penguin-flipper 3.8s ease-in-out infinite;transform-origin:70% 10%}
+.editorial-site .is-penguin-dragging .penguin-body,.editorial-site .is-penguin-dragging .penguin-wing{animation-play-state:paused}
+@keyframes penguin-breathe{0%,100%{transform:rotate(-1.5deg) scaleY(1)}50%{transform:rotate(1.5deg) scaleY(1.025)}}
+@keyframes penguin-flipper{0%,100%{transform:rotate(5deg)}50%{transform:rotate(10deg)}}
+@media(prefers-reduced-motion:reduce){.editorial-site .penguin .penguin-body,.editorial-site .penguin .penguin-wing{animation:none}}
+
+/* Attach the flipper at the side of the torso rather than spreading it out. */
+.editorial-site .penguin-wing{left:-3%;top:34%;width:30%;height:48%;transform:rotate(5deg);transform-origin:70% 10%}
+
+/* Shared rectangular page navigation CTAs across the editorial site. */
+.editorial-site :is(a.page-link,a.detail-back,a.detail-button,a[data-list-link],.detail-adjacent a,.reduced-link){display:inline-flex;align-items:center;justify-content:center;gap:12px;width:fit-content;max-width:100%;min-height:44px;padding:10px 16px;box-sizing:border-box;border:1px solid var(--line-editorial);border-radius:0;clip-path:none;background:transparent;color:var(--ink-editorial);font-size:14px;font-weight:700;line-height:1.6;letter-spacing:-.02em;text-decoration:none;align-self:flex-start;transition:background .18s ease,color .18s ease,border-color .18s ease}
+.editorial-site :is(a.page-link,a.detail-back,a.detail-button,a[data-list-link],.detail-adjacent a,.reduced-link) span{color:inherit}
+.editorial-site :is(a.page-link,a.detail-back,a.detail-button,a[data-list-link],.detail-adjacent a,.reduced-link):is(:hover,:focus-visible){background:var(--accent-editorial);border-color:var(--accent-editorial);color:#fafafa}
+@media(prefers-reduced-motion:reduce){.editorial-site :is(a.page-link,a.detail-back,a.detail-button,a[data-list-link],.detail-adjacent a,.reduced-link){transition:none}}
+
+/* Treat a title and its introductory sentence as one group. */
+.editorial-site .section-heading,.editorial-site .approach-heading{display:flex;flex-direction:column;align-items:flex-start;gap:16px;margin-top:0;margin-bottom:56px}
+.editorial-site .section-heading h2,.editorial-site .approach-heading h2{margin:0;line-height:1.15}
+.editorial-site .section-heading p,.editorial-site .approach-heading>p{margin:0;max-width:52em}
+.editorial-site .home-contact h2{line-height:1.15}
+.editorial-site .home-contact{row-gap:16px}
+
+/* Catalogue cards rise into view once per filter selection. */
+.editorial-site #project-grid .has-card-reveal{opacity:0;transform:translateY(32px) scale(.985);transition:opacity 520ms var(--motion-ease),transform 600ms var(--motion-ease);transition-delay:var(--card-reveal-delay,0ms)}
+.editorial-site #project-grid .has-card-reveal.is-card-visible{opacity:1;transform:none}
+.editorial-site #project-grid .has-card-reveal:focus-within{opacity:1;transform:none;transition-delay:0ms}
+@media(prefers-reduced-motion:reduce){.editorial-site #project-grid .has-card-reveal{opacity:1;transform:none;transition:none}}
+
+/* Profile: documents, expandable journey and evidence-based toolkit. */
+.editorial-site .profile-documents,.editorial-site .profile-tools,.editorial-site .profile-history{margin-top:48px}
+.editorial-site .profile-documents h2,.editorial-site .profile-tools h2{font-size:clamp(24px,2vw,32px);line-height:1.4;margin:0 0 20px}
+.editorial-site.profile-page .profile-documents .document-grid{margin-top:0;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}
+.editorial-site.profile-page .profile-documents .document-card{display:flex;flex-direction:column;align-items:flex-start;justify-content:flex-start;gap:12px;padding:24px;min-height:180px;line-height:1.6}
+.editorial-site.profile-page .profile-documents .doc-label,.editorial-site.profile-page .profile-documents .doc-number{display:none}
+.editorial-site.profile-page .profile-documents .document-card strong{font-size:19px;margin:0;line-height:1.55}
+.editorial-site .doc-description{font-size:14px;color:var(--muted-editorial);margin:0}
+.editorial-site.profile-page .profile-documents .doc-action{margin-top:auto;font-size:14px}
+.editorial-site .profile-history{border-top:1px solid var(--line-editorial);border-bottom:1px solid var(--line-editorial)}
+.editorial-site .profile-history summary{display:flex;justify-content:space-between;align-items:center;padding:24px 0;cursor:pointer;list-style:none;gap:24px}
+.editorial-site .profile-history summary::-webkit-details-marker{display:none}
+.editorial-site .profile-history small{display:block;font-size:12px;color:var(--muted-editorial);margin-bottom:8px}
+.editorial-site .profile-history strong{font-size:28px;font-weight:600}
+.editorial-site .history-toggle{font-size:32px;color:var(--accent-editorial);transition:transform .2s}
+.editorial-site .profile-history[open] .history-toggle{transform:rotate(45deg)}
+.editorial-site .history-grid{display:grid;grid-template-columns:1fr 1fr;gap:32px 48px;padding:8px 0 32px}
+.editorial-site .history-group h3{font-size:18px;margin:0 0 12px}
+.editorial-site .history-group ul{margin:0;padding:0;list-style:none}
+.editorial-site .history-group li{font-size:15px;line-height:1.8;margin-bottom:10px}
+.editorial-site .profile-history[open] .history-grid{animation:journey-open .3s ease}
+@keyframes journey-open{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}
+.editorial-site .tools-intro{margin:0 0 24px;color:var(--muted-editorial);font-size:15px}
+.editorial-site .tools-table table{width:100%;border-collapse:collapse;text-align:left;font-size:15px}
+.editorial-site .tools-table th,.editorial-site .tools-table td{padding:18px 12px;border-bottom:1px solid var(--line-editorial);vertical-align:top;line-height:1.7}
+.editorial-site .tools-table thead{background:var(--color-surface)}
+.editorial-site .tool-capability{color:var(--accent-editorial);white-space:nowrap}
+@media(max-width:767px){.editorial-site.profile-page .profile-documents .document-grid,.editorial-site .history-grid{grid-template-columns:1fr}.editorial-site .tools-table th,.editorial-site .tools-table td{padding:12px 6px;font-size:13px}.editorial-site .history-grid{gap:24px}.editorial-site .profile-history strong{font-size:24px}}
+@media(prefers-reduced-motion:reduce){.editorial-site .profile-history[open] .history-grid{animation:none}.editorial-site .history-toggle{transition:none}}
+
+.editorial-site .document-title-accent{color:var(--accent-editorial);font-weight:800}
+
+/* Fill the profile image frame without an inset or letterboxing. */
+.editorial-site.profile-page .profile-visual{position:relative;padding:0;overflow:hidden;align-self:stretch}
+.editorial-site.profile-page .profile-visual img{position:absolute;inset:0;width:100%;height:100%;max-height:none;object-fit:cover;object-position:center;display:block}
+@media(max-width:767px){.editorial-site.profile-page .profile-visual{min-height:140px}}
+@media(max-width:420px){.editorial-site.profile-page .profile-visual{min-height:140px;aspect-ratio:3/4}}
+
+.editorial-site .profile-history summary{justify-content:flex-start;gap:14px;align-items:flex-end}
+.editorial-site .profile-history .history-toggle{line-height:1.4;flex:none}
+.editorial-site.profile-page .profile-visual{aspect-ratio:3/4;min-height:0;align-self:start}
+.editorial-site.profile-page .profile-visual img{object-position:center top}
+.editorial-site.profile-page .profile-visual img{transform:scale(1.2);transform-origin:center top}
+
+/* Reduce generated headroom while keeping the complete hair visible. */
+.editorial-site.profile-page .profile-visual{aspect-ratio:4/5}
+.editorial-site.profile-page .profile-visual img{transform:translateY(-16%) scale(1.32);transform-origin:center top}
+.editorial-site .editorial-kicker::before{content:none;display:none}
+
+/* Compact resume-style toolkit. */
+.editorial-site .profile-tools h2{margin-bottom:12px}
+.editorial-site .profile-tools .tools-intro{margin-bottom:20px;line-height:1.5}
+.editorial-site .tool-list{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:0 28px;list-style:none;padding:0;margin:0}
+.editorial-site .tool-item{display:flex;gap:12px;align-items:flex-start;padding:14px 0;border-top:1px solid var(--line-editorial);min-width:0}
+.editorial-site .tool-monogram{flex:0 0 28px;height:28px;display:flex;align-items:center;justify-content:center;background:var(--color-surface);color:var(--accent-editorial);font-size:12px;font-weight:700}
+.editorial-site .tool-content{min-width:0}
+.editorial-site .tool-heading{display:flex;flex-wrap:wrap;align-items:baseline;gap:6px 10px}
+.editorial-site .tool-heading h3{margin:0;font-size:16px;line-height:1.4;font-weight:700}
+.editorial-site .tool-heading .tool-capability{font-size:11px;line-height:1.4}
+.editorial-site .tool-content p{font-size:13px;line-height:1.55;color:var(--muted-editorial);margin:5px 0 0}
+.editorial-site .site-header{padding-inline:max(var(--page-gutter),calc((100vw - 1920px)/2 + 100px))}
+.editorial-site .site-header .brand{justify-content:flex-start;padding:0}
+.editorial-site .site-header .brand-mark{margin:0;display:block}
+@media(max-width:1023px){.editorial-site .tool-list{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:767px){.editorial-site .site-header{padding-inline:24px}}
+@media(max-width:600px){.editorial-site .tool-list{grid-template-columns:1fr}.editorial-site .tool-item{padding:12px 0}}
+
+/* Nine tools in three compact rows, following the resume reference. */
+.editorial-site .tools-table{max-width:1200px}
+.editorial-site .tool-list{gap:0 24px}
+.editorial-site .tool-item{padding:10px 0;gap:10px}
+.editorial-site .tool-heading h3{font-size:15px;line-height:1.3}
+.editorial-site .tool-content p{font-size:12px;line-height:1.45;margin-top:3px}
+.editorial-site .tool-monogram{flex-basis:24px;height:24px;font-size:10px}
+@media(min-width:768px){.editorial-site .tool-list{grid-template-columns:repeat(3,minmax(0,1fr))}}
+@media(min-width:480px) and (max-width:767px){.editorial-site .tool-list{grid-template-columns:repeat(2,minmax(0,1fr))}}
+.editorial-site .tool-logo{width:28px;height:28px;flex:0 0 28px;object-fit:contain;display:block;margin-top:1px}
+
+/* Separate the fixed navigation from content passing underneath it. */
+.editorial-site .site-header{background:rgb(250 250 250 / 10%);-webkit-backdrop-filter:blur(12px);backdrop-filter:blur(12px);box-shadow:0 2px 12px rgb(39 45 48 / 4%)}
+.editorial-site .site-header.is-over-dark{background:rgb(7 59 115 / 10%);-webkit-backdrop-filter:blur(12px);backdrop-filter:blur(12px);box-shadow:0 2px 12px rgb(0 0 0 / 6%)}
+.editorial-site .history-group li strong,.editorial-site .awards-event strong{font-size:inherit;font-weight:700}
+.editorial-site .history-group li{overflow-wrap:break-word;word-break:keep-all}
+.editorial-site .history-group .career-description{margin-left:0;color:var(--muted-editorial);font-size:14px;line-height:1.65}
+.editorial-site .awards-event{font-size:13px;color:var(--muted-editorial);margin:0 0 18px}
+.editorial-site .history-awards .award-item{margin-bottom:24px}
+.editorial-site .award-heading{display:flex;align-items:center;gap:10px;flex-wrap:wrap}
+.editorial-site .award-heading h4{font-size:16px;font-weight:700;line-height:1.5;margin:0}
+.editorial-site .award-badge{font-size:12px;font-weight:700;padding:2px 8px;border:1px solid var(--accent-editorial);color:var(--accent-editorial);line-height:1.5;white-space:nowrap}
+.editorial-site .award-item:first-child .award-badge{background:var(--accent-editorial);color:#fafafa}
+.editorial-site .award-meta{font-size:13px;margin:5px 0;color:var(--accent-editorial);line-height:1.6;word-break:keep-all}
+.editorial-site .award-description{font-size:14px;line-height:1.65;margin:0;color:var(--muted-editorial);word-break:keep-all}
+.editorial-site .history-awards .award-item{font-size:15px;line-height:1.8;margin-bottom:10px;font-weight:400;color:var(--ink-editorial)}
+.editorial-site .doc-action{display:inline-flex;align-items:center;gap:8px}
+.editorial-site .download-icon{display:inline-flex;flex:none;color:inherit;width:20px;height:20px}
+.editorial-site .download-icon svg{width:100%;height:100%}
+.editorial-site .profile-history .history-toggle{color:var(--accent-editorial);font-size:20px;line-height:1.8}
+.editorial-site .profile-history[open] .history-toggle{transform:rotate(180deg)}
+.editorial-site .page-link span[aria-hidden],.editorial-site .home-contact .contact-links a span[aria-hidden]{color:inherit}
+.editorial-site .page-link:hover span[aria-hidden],.editorial-site .page-link:focus-visible span[aria-hidden]{color:inherit}
+
+/* Align the toggle with the title line, independently of the label above it. */
+.editorial-site .profile-history summary{display:grid;grid-template-columns:max-content 20px;grid-template-rows:auto auto;column-gap:14px;row-gap:8px;align-items:center;justify-content:start}
+.editorial-site .profile-history summary>span:first-child{display:contents}
+.editorial-site .profile-history summary small{grid-column:1/-1;grid-row:1;margin:0}
+.editorial-site .profile-history summary strong{grid-column:1;grid-row:2;line-height:1.4}
+.editorial-site .profile-history .history-toggle{grid-column:2;grid-row:2;align-self:center;line-height:1;display:flex;align-items:center;justify-content:center}
+.editorial-site .profile-history summary strong,.editorial-site .profile-tools h2{font-size:clamp(24px,2vw,32px);font-weight:700;line-height:1.4}
+
+/* Profile introduction follows the photo reference. */
+.editorial-site.profile-page .profile-details{align-self:center;padding:0}
+.editorial-site.profile-page .profile-role{margin:20px 0 0;font-size:16px;line-height:1.65}
+.editorial-site.profile-page .profile-role strong{font-size:inherit;font-weight:800;color:var(--ink-editorial)}
+.editorial-site.profile-page .profile-links{margin-top:28px;padding-top:28px;border-top:1px solid var(--line-editorial);gap:24px}
+@media(max-width:767px){.editorial-site.profile-page .profile-role{margin-top:12px;font-size:14px}.editorial-site.profile-page .profile-links{margin-top:20px;padding-top:20px;gap:16px}}
+.editorial-site .site-header .brand-mark{font-family:Nohemi,SUIT,sans-serif;font-size:30px;font-weight:700;line-height:1;letter-spacing:-.06em}
+@media(max-width:767px){.editorial-site .site-header .brand-mark{font-size:28px}}

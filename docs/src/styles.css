@@ -1,0 +1,248 @@
+@import url("./palette.css");
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap');
+@font-face{font-family:Pretendard;src:url('../font/Pretendard-1/web/variable/woff2/PretendardVariable.woff2') format('woff2');font-style:normal;font-weight:100 900;font-display:swap}
+:root{font-family:Manrope,'Apple SD Gothic Neo','Malgun Gothic',sans-serif;color:var(--color-ink);background:var(--color-paper);font-synthesis:none;--navy:var(--color-navy);--deep:var(--color-deep-sea);--aqua:var(--color-aqua);--cream:var(--color-paper);--header-height:76px}*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:var(--header-height)}body{margin:0;min-width:320px;overflow-x:hidden}button,a{font:inherit}a{color:inherit}button{cursor:pointer}::selection{background:var(--color-aqua);color:var(--color-deep-sea)}:focus-visible{outline:3px solid var(--color-focus);outline-offset:4px}.skip-link{position:fixed;z-index:50;top:-60px;left:20px;padding:12px 18px;background:#fff}.skip-link:focus{top:12px}.site-header{height:var(--header-height);position:sticky;top:0;z-index:30;display:flex;align-items:center;justify-content:space-between;padding:0 clamp(22px,5vw,88px);background:var(--color-mist);border-bottom:1px solid rgba(9,54,68,.12)}.brand{text-decoration:none;font-size:13px;font-weight:800;letter-spacing:.045em;white-space:nowrap}.brand-mark{display:inline-block;margin-right:12px;font-size:22px;vertical-align:-2px;color:#1c8e9c}.brand-dot{color:#268f9a}.site-nav{display:flex;gap:clamp(20px,3vw,48px);align-items:center}.site-nav a{position:relative;font-size:11px;font-weight:800;letter-spacing:.12em;text-decoration:none;padding:12px 0}.site-nav a:after{content:'';position:absolute;left:0;right:100%;bottom:6px;height:1px;background:currentColor;transition:right .2s}.site-nav a:hover:after,.site-nav a:focus-visible:after{right:0}.header-index{font-size:10px;letter-spacing:.12em;font-weight:800}.menu-toggle{display:none}.hero{height:330vh;min-height:1850px;position:relative;background:#a8dce4}.hero-sticky{--progress:0;--dive:0;--underwater:0;--copy-opacity:1;position:sticky;top:var(--header-height);height:calc(100vh - var(--header-height));min-height:560px;overflow:hidden;background:#bce4e7}.hero-scene,.sky,.sea{position:absolute;inset:0}.sky{background:linear-gradient(180deg,var(--color-sky) 0%,#d6ede8 68%,#e0efea 100%);transform:translateY(calc(var(--underwater) * -22%))}.sun{position:absolute;width:min(28vw,350px);aspect-ratio:1;border-radius:50%;top:9%;right:16%;background:var(--color-warm-light);filter:blur(2px);opacity:calc(1 - var(--underwater) * .85)}.sea{top:61%;background:linear-gradient(180deg,var(--color-water) 0%,var(--color-ocean) 38%,var(--color-ice-depth) 100%);transform:translateY(calc(var(--underwater) * -45%));height:150%}.waterline{position:absolute;top:61%;left:0;width:100%;height:8px;background:#eaf9ee;box-shadow:0 12px 28px rgba(226,251,242,.7);transform:translateY(calc(var(--underwater) * -68vh));opacity:calc(1 - var(--underwater) * .85)}.iceberg-wrap{position:absolute;width:min(65vw,780px);height:min(85vh,930px);left:50%;top:49%;transform:translate(-50%,calc(-23% - var(--underwater) * 33%)) scale(calc(1 - var(--underwater) * .23));transform-origin:center 44%;filter:drop-shadow(0 28px 25px rgba(7,63,87,.15))}.iceberg{width:100%;height:100%;overflow:visible}.penguin{position:absolute;width:56px;height:93px;top:calc(35% + var(--dive) * 34% - var(--underwater) * 22%);left:calc(49% + var(--dive) * 13%);transform:translate(-50%,-50%) rotate(calc(var(--dive) * 120deg)) scale(calc(1 - var(--underwater) * .3));z-index:2}.penguin-body{position:absolute;inset:0;border-radius:46% 46% 43% 43%;background:#102d3d;box-shadow:inset -10px -6px 0 #071e2c}.penguin-belly{position:absolute;left:12px;top:27px;width:37px;height:57px;border-radius:48% 48% 44% 44%;background:#f7f8ee}.penguin-eye{position:absolute;right:10px;top:20px;width:5px;height:5px;background:#fff;border-radius:50%}.penguin-beak{position:absolute;right:-11px;top:30px;border-left:18px solid var(--color-penguin-orange);border-top:6px solid transparent;border-bottom:5px solid transparent}.penguin-wing{position:absolute;left:-13px;top:32px;width:19px;height:45px;background:#14384a;border-radius:50% 10% 55% 55%;transform:rotate(18deg)}.penguin-foot{position:absolute;bottom:-5px;width:20px;height:10px;background:#e9a55f;border-radius:50%}.foot-left{left:5px}.foot-right{right:4px}.bubble{position:absolute;border:2px solid #c8ede6;border-radius:50%;opacity:calc(var(--underwater) * .7)}.b1{width:13px;height:13px;top:63%;left:56%}.b2{width:8px;height:8px;top:70%;left:61%}.b3{width:19px;height:19px;top:76%;left:53%}.hero-copy{position:absolute;top:12%;left:clamp(28px,8vw,140px);z-index:4;opacity:var(--copy-opacity);max-width:720px}.eyebrow{font-size:11px;font-weight:800;letter-spacing:.2em}.hero-copy .eyebrow{margin-bottom:24px}.hero h1,.section-heading h2,.contact-content h2{font-size:clamp(54px,7.2vw,124px);line-height:1.02;letter-spacing:-.08em;margin:0;font-weight:800}.hero h1 em,.section-heading h2 em,.contact-content h2 em{font-style:normal;font-weight:400;letter-spacing:-.09em}.hero-subtitle{font-size:clamp(13px,1.2vw,17px);font-weight:600;margin-top:32px;letter-spacing:-.02em}.hero-bottom{position:absolute;z-index:4;bottom:28px;left:clamp(28px,5vw,88px);right:clamp(28px,5vw,88px);display:flex;justify-content:space-between;align-items:center;font-size:10px;font-weight:800;letter-spacing:.15em;color:#e8f9f4}.scroll-cue{display:flex;gap:14px;align-items:center}.scroll-cue span{font-size:22px;line-height:1}.reduced-link{display:none}.content-section{padding:110px clamp(24px,7vw,120px) 140px;scroll-margin-top:var(--header-height)}.section-kicker{display:flex;justify-content:space-between;border-top:1px solid currentColor;padding-top:15px;font-size:11px;letter-spacing:.16em;font-weight:800}.section-heading{display:flex;justify-content:space-between;align-items:end;gap:40px;margin:58px 0 90px}.section-heading h2{font-size:clamp(55px,7vw,112px)}.section-heading p{max-width:250px;margin:0 0 10px;font-size:13px;font-weight:600;line-height:1.7}.info-section{background:var(--color-paper)}.document-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}.document-card{min-height:220px;padding:28px 30px;display:flex;flex-direction:column;align-items:flex-start;text-decoration:none;background:#e6eeea;border:1px solid #ccdcd6;transition:background .2s,transform .2s}.document-card:not(.is-pending):hover{background:#d8ebe5;transform:translateY(-3px)}.document-card .doc-number,.doc-label{font-size:10px;letter-spacing:.14em;font-weight:800}.doc-label{margin-top:16px;color:#5b7981}.document-card strong{font-size:clamp(26px,3vw,42px);letter-spacing:-.06em;margin-top:10px}.doc-action{margin-top:auto;font-size:11px;font-weight:800;letter-spacing:.1em}.is-pending .doc-action{color:#69828a}.profile-panel{min-height:360px;margin-top:14px;background:#dceae5;display:grid;grid-template-columns:42% 58%;overflow:hidden}.profile-visual{background:#bfd9d4;display:flex;align-items:center;justify-content:center;min-height:400px}.profile-visual img{height:100%;width:100%;object-fit:cover}.profile-symbol{font-size:clamp(80px,12vw,170px);line-height:1;color:#6ab9b7}.profile-details{padding:50px clamp(30px,5vw,75px)}.profile-details h3{font-size:clamp(36px,5vw,64px);margin:16px 0 0;letter-spacing:-.06em}.english-name,.profile-role{margin:4px 0;font-size:16px}.profile-role{margin-bottom:35px}.profile-list{display:grid;grid-template-columns:110px 1fr;row-gap:14px;border-top:1px solid #9cbdb7;padding-top:22px}.profile-list dt{font-weight:800;color:#607f84}.profile-list dd{margin:0}.profile-links{display:flex;flex-wrap:wrap;gap:16px;margin-top:30px}.profile-links a{font-size:11px;font-weight:800;letter-spacing:.12em}.profile-pending{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:8px}.profile-pending .profile-symbol{font-size:100px}.profile-pending p{font-weight:700;color:#4e777a}.projects-section{background:#e6f0ec}.projects-section .section-heading{margin-bottom:70px}.filters{display:flex;gap:8px;overflow-x:auto;padding-bottom:20px;scrollbar-width:thin}.filter-button{white-space:nowrap;min-height:43px;border:1px solid #769b9d;border-radius:100px;padding:0 19px;color:#173d4e;background:transparent;font-size:10px;letter-spacing:.08em;font-weight:800}.filter-button[aria-pressed=true]{background:var(--navy);border-color:var(--navy);color:#fff}.filter-button:hover{border-color:var(--color-navy)}.project-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px;min-height:370px;align-content:start}.project-card{background:#f3f7f3;color:inherit;text-decoration:none;min-width:0}.project-visual{aspect-ratio:1.25;background:#b6d7d2;display:flex;align-items:center;justify-content:center;overflow:hidden}.project-visual img{width:100%;height:100%;object-fit:cover}.project-placeholder-art{font-size:100px;font-weight:800;color:#e8f8f0;letter-spacing:-.12em}.project-info{padding:24px}.project-meta{display:flex;justify-content:space-between;margin:0;font-size:10px;font-weight:800;letter-spacing:.12em;color:#467380}.project-info h3{font-size:24px;letter-spacing:-.05em;margin:14px 0}.project-source,.project-summary{font-size:13px;line-height:1.6}.empty-state{grid-column:1/-1;min-height:370px;border:1px solid #9fbdb7;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:24px}.empty-symbol{font-size:86px;color:#89bdb8;line-height:1}.empty-state strong{font-size:25px;letter-spacing:-.05em;margin-top:20px}.empty-state p{font-size:13px;color:#557982}.contact-section{min-height:750px;background:var(--deep);color:#eaf6f0;position:relative;overflow:hidden}.contact-content{position:relative;z-index:1;margin-top:100px}.contact-content .eyebrow{color:#9bddd1}.contact-content h2{font-size:clamp(62px,8vw,128px);margin-top:20px}.contact-content>p:not(.eyebrow){font-size:15px;margin-top:30px;color:#b6d3d0}.contact-links{display:flex;flex-wrap:wrap;gap:12px;margin-top:60px}.contact-links a,.contact-pending{display:inline-flex;align-items:center;min-height:52px;padding:0 20px;border:1px solid #9bc9c4;text-decoration:none;font-size:11px;font-weight:800;letter-spacing:.1em}.contact-links a:hover{background:var(--color-aqua);color:#092d3f}.contact-pending{color:#9bc9c4}.contact-orbit{position:absolute;right:-5vw;bottom:-280px;font-size:min(68vw,900px);line-height:1;color:#103b50;pointer-events:none}.site-footer{min-height:90px;padding:30px clamp(24px,7vw,120px);display:flex;justify-content:space-between;align-items:center;gap:15px;background:var(--color-deep-sea);border-top:1px solid #386071;color:#9cc7c5;font-size:10px;letter-spacing:.12em;font-weight:800}.site-footer a{text-decoration:none}
+@media(max-width:1023px){.header-index{display:none}.project-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.hero-copy{top:13%}.hero h1{font-size:clamp(55px,8vw,88px)}}
+@media(max-width:767px){:root{--header-height:66px}.site-header{padding:0 22px}.brand{font-size:10px}.brand-mark{font-size:19px;margin-right:6px}.menu-toggle{width:42px;height:42px;border:0;background:none;display:flex;flex-direction:column;justify-content:center;gap:6px;align-items:center}.menu-toggle span{width:22px;height:2px;background:var(--color-ink)}.site-nav{display:none;position:absolute;top:var(--header-height);left:0;right:0;background:var(--color-mist);padding:20px 24px 28px;box-shadow:0 16px 24px rgba(5,34,48,.14);flex-direction:column;align-items:stretch;gap:0}.site-nav.is-open{display:flex}.site-nav a{padding:15px 0;font-size:15px;border-bottom:1px solid #c5dcd6}.hero{height:250vh;min-height:1300px}.hero-sticky{min-height:0}.hero-copy{top:10%;left:25px;right:25px}.hero h1{font-size:clamp(47px,10vw,76px)}.hero-copy .eyebrow{max-width:260px;line-height:1.5;font-size:9px}.hero-subtitle{max-width:250px;font-size:12px;line-height:1.6}.sun{width:190px;right:-40px;top:19%}.sea{top:58%}.waterline{top:58%}.iceberg-wrap{width:105vw;height:76vh;top:51%;transform:translate(-50%,calc(-10% - var(--underwater) * 37%)) scale(calc(1 - var(--underwater) * .14))}.penguin{top:calc(41% + var(--dive) * 25% - var(--underwater) * 17%);left:calc(48% + var(--dive) * 18%);transform:translate(-50%,-50%) rotate(calc(var(--dive) * 120deg)) scale(.75)}.hero-bottom{left:25px;right:25px;bottom:20px}.hero-bottom>span:first-child,.hero-bottom>span:last-child{display:none}.scroll-cue{margin-left:auto}.content-section{padding:80px 24px 100px}.section-heading{display:block;margin:45px 0 55px}.section-heading h2{font-size:clamp(52px,10vw,76px)}.section-heading p{margin-top:24px}.document-grid{grid-template-columns:1fr}.document-card{min-height:190px}.profile-panel{grid-template-columns:1fr}.profile-visual{min-height:280px}.profile-details{padding:36px 27px}.project-grid{grid-template-columns:1fr;min-height:280px}.empty-state{min-height:280px}.contact-section{min-height:650px}.contact-content{margin-top:80px}.contact-content h2{font-size:clamp(54px,10vw,76px)}.contact-orbit{font-size:500px;right:-170px;bottom:-140px}.site-footer{flex-wrap:wrap}.site-footer span:last-child{display:none}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*:before,*:after{animation-duration:.01ms!important;transition-duration:.01ms!important}.hero{height:calc(100vh - var(--header-height));min-height:600px}.hero-sticky{position:relative;top:0;--underwater:1!important;--dive:0!important;--copy-opacity:1!important}.hero-copy{color:#fff;text-shadow:0 1px 10px #123c53}.hero-bottom{display:none}.reduced-link{display:inline-flex;position:absolute;z-index:5;left:clamp(28px,8vw,140px);bottom:40px;gap:15px;color:#fff;font-size:13px;font-weight:800;text-decoration:underline}.penguin{display:none}.iceberg-wrap{transform:translate(-50%,-50%) scale(.72)}}
+
+/* 수면이 화면을 지나가며 카메라가 바닷속으로 내려가는 장면 */
+.hero-sticky{--submerge:0;--dive-label:0;--reveal-label:0}
+.undersea-backdrop{position:absolute;inset:0;z-index:0;background:radial-gradient(ellipse at 50% 0%,#4da6b2 0%,#155a78 50%,var(--color-deep-sea) 100%);opacity:var(--submerge)}
+.sky,.sun{z-index:0}
+.sea{z-index:0}
+.iceberg-wrap{z-index:1}
+.ocean-curtain{position:absolute;z-index:2;left:0;right:0;top:calc(61% - var(--submerge) * 92%);height:145%;background:linear-gradient(180deg,rgba(235,250,246,.72) 0%,rgba(91,185,198,.92) 3%,rgba(31,124,153,.96) 35%,rgba(8,58,86,.98) 100%);opacity:calc(1 - var(--submerge) * .77);pointer-events:none}
+.waterline{z-index:3;top:calc(61% - var(--submerge) * 92%);height:12px;transform:none;opacity:calc(1 - var(--submerge) * .8);box-shadow:0 -10px 25px rgba(255,255,255,.7),0 18px 40px rgba(218,250,245,.7)}
+.penguin{z-index:4}
+.bubble{z-index:4;transform:translateY(calc(var(--submerge) * -22vh))}
+.hero-copy,.hero-bottom{z-index:5}
+.dive-caption,.reveal-caption{position:absolute;z-index:5;color:#f4fffb;text-align:center;pointer-events:none;text-shadow:0 2px 20px rgba(5,35,57,.35)}
+.dive-caption{top:31%;left:50%;transform:translate(-50%,calc(var(--dive) * -10vh));opacity:var(--dive-label);font-size:clamp(40px,7vw,92px);font-weight:800;letter-spacing:-.08em;line-height:.95;margin:0;white-space:nowrap}
+.dive-caption em{font-style:normal;font-weight:400}.dive-caption span{display:block;font-size:24px;font-weight:400;letter-spacing:0;margin-top:20px}
+.reveal-caption{left:50%;bottom:11%;transform:translateX(-50%);opacity:var(--reveal-label);margin:0;font-size:11px;font-weight:800;letter-spacing:.22em;white-space:nowrap}
+.reveal-caption strong{display:block;margin-top:10px;font-size:clamp(24px,3vw,42px);letter-spacing:-.06em}
+@media(max-width:767px){.ocean-curtain,.waterline{top:calc(58% - var(--submerge) * 91%)}.dive-caption{top:37%;font-size:clamp(43px,11vw,72px)}.reveal-caption{bottom:16%}.reveal-caption strong{font-size:25px}}
+@media(prefers-reduced-motion:reduce){.hero-sticky{--submerge:1!important;--dive-label:0!important;--reveal-label:0!important}.ocean-curtain{opacity:.2}.waterline{display:none}.undersea-backdrop{opacity:1}.dive-caption,.reveal-caption{display:none}}
+
+/* 글자 영역과 캐릭터를 분리하고, 시작 장면의 빙산 꼭대기를 수면 가까이 둡니다. */
+.hero-copy{max-width:min(58vw,720px)}
+.hero-subtitle{max-width:440px;line-height:1.7}
+.penguin{left:calc(69% + var(--dive) * 10%);top:calc(48% + var(--dive) * 25% - var(--underwater) * 14%)}
+@media(max-width:767px){
+  .hero-copy{max-width:none}
+  .hero-subtitle{max-width:min(51vw,290px);margin-top:24px}
+  .iceberg-wrap{transform:translate(-50%,calc(-30% - var(--underwater) * 20%)) scale(calc(1 - var(--underwater) * .14))}
+  .penguin{left:calc(70% + var(--dive) * 12%);top:calc(53% + var(--dive) * 23% - var(--underwater) * 16%)}
+}
+
+/* 마지막 장면: 펭귄은 다시 몸을 펴고 헤엄치며, 빙산 하단은 다음 섹션까지 확장됩니다. */
+.hero-sticky{--swim:0;--shelf:0;--penguin-angle:0deg}
+.iceberg-wrap{transform:translate(-50%,calc(-23% - var(--underwater) * 27%)) scale(calc(1 + var(--underwater) * .22));transform-origin:center 40%}
+.ice-shelf{position:absolute;z-index:1;left:-1px;right:-1px;top:62%;bottom:-2px;opacity:var(--shelf);background:linear-gradient(165deg,var(--color-shelf-light) 0%,#2d8099 30%,#135575 58%,var(--color-ice-depth) 92%);clip-path:polygon(0 20%,12% 28%,30% 2%,48% 23%,66% 0,83% 25%,100% 12%,100% 100%,0 100%);pointer-events:none}
+.ice-shelf::after{content:'';position:absolute;inset:0;background:linear-gradient(100deg,rgba(196,235,230,.3),transparent 42%,rgba(4,48,73,.3) 68%);clip-path:polygon(0 20%,30% 2%,48% 23%,66% 0,100% 12%,100% 100%,0 100%)}
+.ocean-curtain{opacity:calc(1 - var(--submerge))}
+.penguin{left:calc(69% + var(--dive) * 10% + var(--swim) * 8%);top:calc(48% + var(--dive) * 25% - var(--underwater) * 14% - var(--swim) * 9%);transform:translate(-50%,-50%) rotate(var(--penguin-angle)) scale(calc(.9 - var(--underwater) * .117))}
+.hero-sticky.is-swimming .penguin-wing{animation:wing-stroke .42s ease-in-out infinite alternate;transform-origin:80% 20%}
+.hero-sticky.is-swimming .penguin-foot{animation:foot-kick .42s ease-in-out infinite alternate}
+.hero-sticky.is-swimming .foot-right{animation-delay:-.21s}
+@keyframes wing-stroke{from{transform:rotate(10deg)}to{transform:rotate(-48deg)}}
+@keyframes foot-kick{from{transform:rotate(-20deg)}to{transform:rotate(25deg)}}
+.hero-bottom{opacity:calc(1 - var(--progress) * 2.5)}
+.info-section{background:var(--color-ice-depth);color:#eaf6f0}
+.info-section .document-card,.info-section .profile-panel{color:var(--color-ink)}
+.info-section .document-card{background:#dceae5}
+.info-section .document-card:not(.is-pending):hover{background:#e7f3ee}
+.info-section .profile-pending{color:var(--color-ink)}
+@media(max-width:767px){
+  .hero{height:290vh;min-height:1500px}
+  .iceberg-wrap{transform:translate(-50%,calc(-30% - var(--underwater) * 20%)) scale(calc(1 + var(--underwater) * .38))}
+  .ice-shelf{top:58%}
+  .penguin{left:calc(70% + var(--dive) * 12% + var(--swim) * 6%);top:calc(53% + var(--dive) * 23% - var(--underwater) * 16% - var(--swim) * 8%);transform:translate(-50%,-50%) rotate(var(--penguin-angle)) scale(.675)}
+}
+@media(prefers-reduced-motion:reduce){
+  .hero-sticky{--shelf:1!important;--swim:1!important}
+  .iceberg-wrap{transform:translate(-50%,-50%) scale(1.15)}
+  .hero-sticky.is-swimming .penguin-wing,.hero-sticky.is-swimming .penguin-foot{animation:none}
+}
+
+/* 헤엄쳐 퇴장 → 왼쪽에서 재등장 → 빙산 위에서 인사 */
+.hero-sticky{--penguin-visible:1}
+.penguin{left:var(--penguin-x,69%);top:var(--penguin-y,48%);opacity:var(--penguin-visible)}
+.hero-scene .penguin{z-index:5}
+.hero-sticky.is-waving .penguin-wing{animation:wave-hello .55s ease-in-out infinite alternate;transform-origin:80% 18%}
+@keyframes wave-hello{from{transform:rotate(-35deg)}to{transform:rotate(-105deg)}}
+.ice-shelf::after{mask-image:linear-gradient(#000 0%,transparent 76%)}
+.hero-sticky::after{content:'';position:absolute;z-index:4;left:0;right:0;bottom:0;height:29%;background:linear-gradient(transparent 0%,var(--color-ice-depth) 96%);opacity:var(--shelf);pointer-events:none}
+.info-section{padding-top:80px;background:var(--color-ice-depth)}
+.info-section .section-heading{margin-top:20px}
+@media(max-width:767px){.penguin{left:var(--penguin-x,70%);top:var(--penguin-y,53%)}.info-section{padding-top:60px}}
+@media(prefers-reduced-motion:reduce){.hero-sticky.is-waving .penguin-wing{animation:none}}
+
+/* 첫 장면에서는 펭귄 발이 빙산 오른쪽 능선에 닿게 배치합니다. */
+@media(min-width:1024px){.iceberg-wrap{left:calc(65% - var(--underwater) * 15%)}}
+@media(min-width:768px) and (max-width:1023px){.iceberg-wrap{left:calc(60% - var(--underwater) * 10%)}}
+@media(max-width:767px){.iceberg-wrap{left:calc(58% - var(--underwater) * 8%)}}
+
+/* 다이브 이후에는 카메라가 빙산 쪽으로 다가가며 전체 덩어리가 커집니다. */
+.iceberg-wrap{
+  top:calc(49% + var(--underwater) * 15%);
+  transform:translate(-50%,calc(-23% - var(--underwater) * 27%)) scale(calc(1 + var(--underwater) * 1.15));
+}
+@media(max-width:767px){
+  .iceberg-wrap{
+    top:calc(51% + var(--underwater) * 11%);
+    transform:translate(-50%,calc(-30% - var(--underwater) * 20%)) scale(calc(1 + var(--underwater) * .85));
+  }
+}
+@media(prefers-reduced-motion:reduce){.iceberg-wrap{top:56%;transform:translate(-50%,-50%) scale(1.25)}}
+
+/* 수면을 지나면 윗부분을 걷어내고 수중 몸통만 화면 전체에 보여줍니다. */
+.hero-sticky{--body-reveal:0}
+.iceberg-wrap{opacity:calc(1 - var(--body-reveal))}
+.iceberg-body-closeup{position:absolute;inset:0;z-index:1;width:100%;height:100%;opacity:var(--body-reveal);pointer-events:none}
+@media(prefers-reduced-motion:reduce){.hero-sticky{--body-reveal:0!important}}
+
+/* 반투명 크로스페이드 대신 수중 빙산이 아래에서 올라오며 장면을 이어받습니다. */
+.hero-sticky{--body-wipe:100%}
+.iceberg-wrap{opacity:1;top:calc(49% - var(--underwater) * 50%)}
+.iceberg-body-closeup{
+  opacity:1;
+  -webkit-mask-image:linear-gradient(to bottom,transparent calc(var(--body-wipe) - 14%),#000 var(--body-wipe));
+  mask-image:linear-gradient(to bottom,transparent calc(var(--body-wipe) - 14%),#000 var(--body-wipe));
+}
+.sun{opacity:calc(1 - var(--submerge) * 2.2)}
+@media(max-width:767px){.iceberg-wrap{top:calc(51% - var(--underwater) * 56%)}}
+@media(prefers-reduced-motion:reduce){.iceberg-wrap{top:56%}.iceberg-body-closeup{-webkit-mask-image:none;mask-image:none;opacity:0}}
+
+/* 모든 페이지에서 사용하는 TOP 버튼 */
+.top-button{position:fixed;z-index:40;right:24px;bottom:24px;width:44px;height:44px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:3px;padding:4px;border:0;border-radius:14px;background:var(--color-aqua);color:var(--color-deep-sea);box-shadow:0 6px 16px rgba(5,38,57,.18);opacity:0;transform:translateY(12px) scale(.94);pointer-events:none;transition:opacity .25s ease,transform .25s ease,background .2s ease}
+.top-button.is-visible{opacity:1;transform:translateY(0) scale(1);pointer-events:auto}
+.top-button:hover{background:var(--color-ice)}
+.top-button-arrow{display:block;width:13px;height:13px;border-left:2.5px solid currentColor;border-top:2.5px solid currentColor;border-radius:1px;transform:translateY(3px) rotate(45deg)}
+.top-button-text{font-size:10px;font-weight:700;line-height:1;letter-spacing:-.04em}
+@media(max-width:767px){.top-button{right:16px;bottom:max(16px,env(safe-area-inset-bottom));width:38px;height:38px;border-radius:12px}.top-button-arrow{width:11px;height:11px;border-width:2px}.top-button-text{font-size:9px}}
+@media(prefers-reduced-motion:reduce){.top-button{transition:none}}
+
+/* 돌아온 펭귄이 TOP 버튼까지 이동할 스크롤 거리를 확보합니다. */
+.hero{height:560vh;min-height:3600px}
+@media(max-width:767px){.hero{height:470vh;min-height:2600px}}
+@media(prefers-reduced-motion:reduce){.hero{height:calc(100vh - var(--header-height));min-height:600px}}
+
+/* 히어로 위에 떠 있는 글래스 헤더 */
+.site-header{position:fixed;left:0;right:0;top:0;width:100%;background:rgba(233,245,242,.62);-webkit-backdrop-filter:blur(18px) saturate(1.35);backdrop-filter:blur(18px) saturate(1.35);border-bottom:1px solid rgba(255,255,255,.42);box-shadow:0 8px 26px rgba(7,48,65,.07)}
+.brand{display:inline-flex;align-items:center;justify-content:center;width:44px;height:44px;flex:none}
+.brand-mark{margin:0;font-size:30px;line-height:1;color:#1c8e9c}
+.site-nav{margin-left:auto}
+.header-index{display:none}
+.hero-sticky{top:0;height:100vh}
+.hero-copy{top:clamp(145px,17vh,220px)}
+@media(max-width:767px){
+  .brand-mark{font-size:28px}
+  .site-nav{background:rgba(233,245,242,.86);-webkit-backdrop-filter:blur(18px) saturate(1.35);backdrop-filter:blur(18px) saturate(1.35)}
+  .hero-copy{top:calc(var(--header-height) + 42px)}
+}
+@media(prefers-reduced-motion:reduce){.hero{height:100vh;min-height:600px}.hero-sticky{height:100vh}}
+
+.hero-bottom{justify-content:center}
+@media(max-width:767px){.hero-bottom>span.scroll-cue{display:flex;margin-left:0}}
+
+/* 새 IA의 독립 페이지와 메인 하단 콘텐츠 */
+.site-nav a[aria-current="page"]:after{right:0}
+.inner-page{min-height:100vh}
+.inner-page>.content-section:first-child{padding-top:calc(var(--header-height) + 100px)}
+.inner-page .section-heading h1{font-size:clamp(55px,7vw,112px);line-height:1.02;letter-spacing:-.08em;margin:0;font-weight:800}
+.inner-page .section-heading h1 em{font-style:normal;font-weight:400;letter-spacing:-.09em}
+.inner-page .document-grid{grid-template-columns:repeat(3,minmax(0,1fr))}
+.inner-page .profile-details h2{font-size:clamp(36px,5vw,64px);margin:16px 0 0;letter-spacing:-.06em}
+.inner-page .project-info h2{font-size:24px;letter-spacing:-.05em;margin:14px 0}
+/* 작은 심볼 로고와 배경 위에 겹치는 투명 헤더 */
+:root{--header-height:58px}
+.site-header{padding:0 clamp(20px,3vw,56px);color:var(--color-ink);background:transparent;-webkit-backdrop-filter:none;backdrop-filter:none;border:0;box-shadow:none;transition:color .25s}
+.site-header.is-over-dark{color:#f3faf6;background:transparent;border:0}
+.site-nav a,.menu-toggle{background:rgba(235,249,246,.20);-webkit-backdrop-filter:blur(9px);backdrop-filter:blur(9px);border:1px solid rgba(255,255,255,.18)}
+.site-header.is-over-dark .site-nav a,.site-header.is-over-dark .menu-toggle{background:rgba(4,25,40,.22);border-color:rgba(255,255,255,.12)}
+.site-header .brand,.site-header.is-over-dark .brand{background:none;-webkit-backdrop-filter:none;backdrop-filter:none;border:0;box-shadow:none}
+.site-header .site-nav a{border:0}
+.brand{width:34px;height:34px}
+.brand-mark{font-size:23px}
+.site-header.is-over-dark .brand-mark{color:#b9eee5}
+.site-nav{gap:8px}
+.site-nav a{font-size:10px;padding:10px 14px}
+.site-nav a:after{left:14px;bottom:6px}
+.menu-toggle{color:inherit}
+.menu-toggle span{background:currentColor}
+.concept-section{background:var(--color-paper)}
+.concept-statement{max-width:1050px;margin:60px 0 80px;font-size:clamp(30px,4vw,64px);font-weight:700;line-height:1.35;letter-spacing:-.065em}
+.featured-section{background:#e6f0ec}
+.page-link{display:inline-flex;align-items:center;justify-content:space-between;gap:50px;min-height:54px;margin-top:44px;padding:0 22px;border:1px solid currentColor;text-decoration:none;font-size:12px;font-weight:800;letter-spacing:.04em;transition:background .2s,color .2s}
+.page-link:hover{background:var(--color-navy);color:#fff}
+@media(max-width:1023px){.inner-page .document-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:767px){
+  :root{--header-height:54px}
+  .site-header{padding:0 20px}
+  .brand{width:32px;height:32px}
+  .menu-toggle{width:36px;height:36px}
+  .inner-page>.content-section:first-child{padding-top:calc(var(--header-height) + 72px)}
+  .inner-page .section-heading h1{font-size:clamp(52px,10vw,76px)}
+  .inner-page .document-grid{grid-template-columns:1fr}
+  .concept-statement{margin:45px 0 60px;font-size:clamp(30px,8vw,48px)}
+  .page-link{width:100%}
+  .site-nav,.site-header.is-over-dark .site-nav{color:var(--color-ink);background:rgba(233,245,242,.94)}
+  .site-nav a,.site-header.is-over-dark .site-nav a{padding:15px 0;background:transparent;-webkit-backdrop-filter:none;backdrop-filter:none;border:0;border-bottom:1px solid #c5dcd6}
+}
+
+/* 레퍼런스의 왼쪽 접이식 메뉴 */
+.site-header{justify-content:flex-start;gap:10px}
+.site-header .menu-toggle,.site-header.is-over-dark .menu-toggle{display:flex;position:relative;z-index:2;width:34px;height:34px;padding:0;align-items:center;justify-content:center;flex-direction:column;gap:5px;color:inherit;background:rgba(4,25,40,.72);border:0;border-radius:2px;-webkit-backdrop-filter:blur(8px);backdrop-filter:blur(8px)}
+.menu-toggle span{width:16px;height:1.5px;background:#fff;transition:transform .22s,opacity .22s}
+.menu-toggle[aria-expanded="true"] span:first-child{transform:translateY(3.25px) rotate(45deg)}
+.menu-toggle[aria-expanded="true"] span:last-child{transform:translateY(-3.25px) rotate(-45deg)}
+.site-header .site-nav,.site-header.is-over-dark .site-nav{display:none;position:absolute;top:calc(var(--header-height) - 3px);left:calc(clamp(20px,3vw,56px) + 44px);right:auto;z-index:1;width:min(320px,calc(100vw - 40px));min-height:360px;margin:0;padding:26px 20px 34px;flex-direction:column;align-items:stretch;gap:0;color:#6f777a;background:rgba(12,20,24,.94);border:0;box-shadow:0 18px 36px rgba(0,0,0,.22);-webkit-backdrop-filter:blur(18px);backdrop-filter:blur(18px)}
+.site-header .site-nav.is-open{display:flex}
+.site-header .site-nav a,.site-header.is-over-dark .site-nav a{display:flex;align-items:center;justify-content:space-between;padding:11px 2px;font-size:clamp(20px,2vw,27px);font-weight:500;letter-spacing:-.05em;color:inherit;background:none;border:0;border-bottom:1px solid rgba(255,255,255,.10);-webkit-backdrop-filter:none;backdrop-filter:none;transition:color .2s}
+.site-header .site-nav a:after{content:'↗';position:static;width:auto;height:auto;background:none;font-size:14px;line-height:1;opacity:.55}
+.site-header .site-nav a:hover,.site-header .site-nav a:focus-visible,.site-header .site-nav a[aria-current="page"]{color:#fff}
+@media(max-width:767px){
+  .site-header .site-nav,.site-header.is-over-dark .site-nav{left:20px;top:calc(var(--header-height) - 2px);width:min(320px,calc(100vw - 40px));min-height:320px}
+}
+
+/* 로고와 메뉴를 헤더 양쪽 끝에 배치합니다. */
+.brand{width:48px;height:48px}
+.brand-mark{font-size:38px}
+.site-header .menu-toggle{margin-left:auto}
+.site-header .site-nav,.site-header.is-over-dark .site-nav{left:auto;right:clamp(20px,3vw,56px)}
+@media(max-width:767px){.brand{width:44px;height:44px}.brand-mark{font-size:34px}.site-header .site-nav,.site-header.is-over-dark .site-nav{left:auto;right:20px}}
+
+/* 프로젝트 목록: 카드 수에 따라 행이 계속 늘어납니다. */
+.inner-page .project-grid{grid-template-columns:repeat(2,minmax(0,1fr));grid-auto-flow:row;gap:32px;min-height:0;align-content:start}
+.inner-page .project-card{display:block;border:1px solid rgba(16,43,59,.16);background:var(--color-paper)}
+.inner-page .project-visual{aspect-ratio:16/9;background:#c9dad7}
+.inner-page .project-info{padding:24px 28px 30px}
+.inner-page .project-card-pending .project-visual{background:#cfddda}
+.inner-page .project-card-pending .project-placeholder-art{font-size:clamp(64px,8vw,140px);font-weight:400;color:rgba(16,43,59,.22)}
+.inner-page .project-card-pending .project-info h2{color:#658087}
+@media(max-width:767px){.inner-page .project-grid{grid-template-columns:1fr;gap:20px}.inner-page .project-info{padding:20px 22px 24px}}
+
+/* 확장 메뉴는 화면 너비의 1/4, 작은 화면에서는 읽기 좋은 너비를 유지합니다. */
+.site-header .menu-toggle,.site-header.is-over-dark .menu-toggle{border-radius:10px}
+.site-header .site-nav,.site-header.is-over-dark .site-nav{width:25vw;border-radius:18px}
+@media(max-width:767px){.site-header .site-nav,.site-header.is-over-dark .site-nav{width:min(420px,calc(100vw - 40px));border-radius:16px}}
+
+/* 본문은 로컬 Pretendard, 타이틀은 기존 서체를 유지합니다. */
+:root{font-family:Pretendard,'Apple SD Gothic Neo','Malgun Gothic',sans-serif;letter-spacing:-.02em}
+h1,h2,h3,.dive-caption,.reveal-caption strong,.concept-statement,.document-card strong,.empty-state strong{font-family:Manrope,'Apple SD Gothic Neo','Malgun Gothic',sans-serif}
+.site-header .site-nav a,.hero-subtitle,.hero-bottom,.section-kicker,.section-heading p,.document-card .doc-number,.doc-label,.doc-action,.profile-links a,.filter-button,.project-meta,.contact-links a,.contact-pending,.site-footer,.top-button-text,.page-link,.eyebrow,.reveal-caption{letter-spacing:-.02em}
+.dive-caption{font-size:clamp(27px,4.667vw,61px)}
+@media(max-width:767px){.dive-caption{font-size:clamp(29px,7.333vw,48px)}}
+
+/* 메뉴와 TOP 버튼은 정팔각형, 펼친 메뉴는 모서리만 얕게 깎습니다. */
+.site-header .menu-toggle,.site-header.is-over-dark .menu-toggle,.top-button{border-radius:0;clip-path:polygon(29.29% 0,70.71% 0,100% 29.29%,100% 70.71%,70.71% 100%,29.29% 100%,0 70.71%,0 29.29%)}
+.site-header .site-nav,.site-header.is-over-dark .site-nav{border-radius:0;clip-path:polygon(14px 0,calc(100% - 14px) 0,100% 14px,100% calc(100% - 14px),calc(100% - 14px) 100%,14px 100%,0 calc(100% - 14px),0 14px)}
+
+/* 메뉴 버튼의 바탕색을 로고와 함께 전환합니다. */
+.brand-mark{color:var(--color-logo)}
+.site-header.is-over-dark .brand-mark{color:var(--color-logo-on-dark)}
+.site-header .menu-toggle{background:var(--color-logo)}
+.site-header.is-over-dark .menu-toggle{background:var(--color-logo-on-dark)}
+.site-header.is-over-dark .menu-toggle span{background:var(--color-deep-sea)}
