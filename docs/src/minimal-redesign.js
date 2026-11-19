@@ -60,6 +60,8 @@
     let trailTimer;
     let moveTimer;
     let isDiving = false;
+    let isPaused = false;
+    let guideOpen = false;
     let jumpStart = null;
     let lastScrollY = window.scrollY;
     const penguinSize = () => penguin.getBoundingClientRect().width || 64;
@@ -82,7 +84,7 @@
     let moveStartedAt = performance.now();
     let activeDuration = 3000;
     const move = () => {
-      if (isDiving) return;
+      if (isDiving || isPaused || guideOpen) return;
       const size = penguinSize();
       const ratio = .25 + Math.random() * .5;
       destination = pointOnIce(ratio);
@@ -106,6 +108,35 @@
     placePenguin(current);
     moveTimer = window.setTimeout(move, 80);
 
+    const pausePatrol = () => {
+      if (isDiving) return;
+      window.clearInterval(trailTimer);
+      window.clearTimeout(moveTimer);
+      const matrix = new DOMMatrixReadOnly(getComputedStyle(penguin).transform);
+      current = { x: matrix.m41, y: matrix.m42 };
+      destination = current;
+      penguin.style.transitionDuration = '0ms';
+      penguin.style.transform = `translate3d(${current.x}px, ${current.y}px, 0)`;
+    };
+    const resumePatrolIfReady = () => {
+      if (isDiving || isPaused || guideOpen) return;
+      window.clearTimeout(moveTimer);
+      moveTimer = window.setTimeout(move, 120);
+    };
+    penguin.addEventListener('pointerenter', () => {
+      isPaused = true;
+      pausePatrol();
+    });
+    penguin.addEventListener('pointerleave', () => {
+      isPaused = false;
+      resumePatrolIfReady();
+    });
+    penguin.addEventListener('penguin-guide-change', event => {
+      guideOpen = Boolean(event.detail?.open);
+      if (guideOpen) pausePatrol();
+      else resumePatrolIfReady();
+    });
+
     const stopPatrol = () => {
       window.clearInterval(trailTimer);
       window.clearTimeout(moveTimer);
@@ -122,7 +153,7 @@
       hero.style.setProperty('--dive-progress', '0');
       penguin.classList.remove('is-diving', 'is-submerged');
       penguinSplash?.classList.remove('is-visible');
-      moveTimer = window.setTimeout(move, 100);
+      if (!isPaused && !guideOpen) moveTimer = window.setTimeout(move, 100);
     };
     const updateDive = () => {
       const viewport = Math.max(window.innerHeight, 1);

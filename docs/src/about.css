@@ -10,12 +10,11 @@
 .profile-statement h2 { max-width: none; margin: 0; font-family: var(--body); font-size: 18px; font-weight: 600; line-height: 1.4; letter-spacing: -.025em; }
 .profile-statement h2 span { display: block; margin-top: 3px; color: var(--muted); font-size: 13px; font-weight: 400; letter-spacing: 0; }
 .profile-role-label { margin-top: 12px; color: var(--muted); font-size: 11px; text-transform: uppercase; letter-spacing: .06em; }
-.profile-contact { display: grid; justify-items: start; gap: 8px; margin-top: 28px; font-size: 12px; font-style: normal; line-height: 1.5; }
-.profile-contact a { position: relative; padding-bottom: 2px; }
-.profile-contact a::after { position: absolute; inset: auto 0 0; height: 1px; background: currentColor; content: ""; transform: scaleX(0); transform-origin: right; transition: transform .28s ease; }
-.profile-contact a:hover::after, .profile-contact a:focus-visible::after { transform: scaleX(1); transform-origin: left; }
-.profile-contact a:hover, .profile-contact a:focus-visible { color: var(--blue); }
-.profile-contact a > span, .document-links a > span { display: inline-block; margin-left: 3px; }
+.profile-contact { display: grid; grid-template-columns: repeat(2, 44px); gap: 8px; width: max-content; margin-top: 28px; font-style: normal; }
+.profile-contact a { display: grid; place-items: center; width: 44px; height: 44px; border: 1px solid #d9e9f7; color: #111; }
+.profile-contact a svg { display: block; width: 20px; height: 20px; }
+.profile-contact a:hover, .profile-contact a:focus-visible { border-color: var(--blue); background: #f4f9fe; color: var(--blue); }
+.profile-contact a:focus-visible { outline: 2px solid var(--blue); outline-offset: 2px; }
 .document-links { display: grid; justify-items: start; gap: 8px; margin-top: 26px; font-size: 12px; }
 .document-links a { padding: 7px 10px; border: 1px solid #d9e9f7; background: #f4f9fe; }
 .about-content { min-width: 0; }
@@ -69,7 +68,7 @@
   .profile-overview figure { width: 112px; }
   .profile-statement { padding: 0; }
   .profile-statement h2 { font-size: 16px; }
-  .profile-contact { gap: 6px; margin-top: 18px; font-size: 11px; }
+  .profile-contact { gap: 6px; margin-top: 18px; }
   .profile-role-label { margin-top: 8px; font-size: 10px; }
   .document-links { gap: 8px; margin-top: 18px; font-size: 11px; }
   .about-introduction h2 { font-size: 22px; }

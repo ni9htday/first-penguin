@@ -1,8 +1,11 @@
-.penguin-guide[hidden], .penguin-guide-launcher[hidden] { display: none !important; }
+.penguin-guide[hidden], .penguin-guide-launcher[hidden], .penguin-guide-top[hidden] { display: none !important; }
 .penguin-guide-launcher { position: fixed; z-index: 1050; right: 24px; bottom: max(80px, calc(env(safe-area-inset-bottom) + 68px)); display: grid; place-items: center; width: 48px; height: 48px; padding: 5px; border: 1px solid #a6d5f8; background: #f4faff; box-shadow: 3px 3px 0 #cde9fc; cursor: pointer; }
 .penguin-guide-launcher img { display: block; width: 34px; height: 34px; object-fit: contain; image-rendering: pixelated; }
 .penguin-guide-launcher span { position: absolute; top: -8px; right: -4px; min-width: 16px; height: 16px; background: #0090ff; color: white; font: bold 11px/16px sans-serif; text-align: center; }
 .penguin-guide-launcher:is(:hover,:focus-visible) { transform: translateY(-3px); border-color: #0090ff; }
+.penguin-guide-top { position: fixed; z-index: 1049; right: 24px; bottom: max(20px, env(safe-area-inset-bottom)); display: grid; place-items: center; gap: 4px; width: 48px; height: 48px; padding: 7px 5px 5px; border: 1px solid #a6d5f8; background: #fff; color: #0090ff; box-shadow: 3px 3px 0 #cde9fc; font-family: 'Galmuri7', monospace; font-size: 8px; cursor: pointer; }
+.penguin-guide-top-arrow { width: 3px; height: 3px; background: currentColor; box-shadow: -3px 3px currentColor, 3px 3px currentColor, -6px 6px currentColor, 6px 6px currentColor, 0 3px currentColor, 0 6px currentColor, 0 9px currentColor; transform: translateY(-2px); }
+.penguin-guide-top:is(:hover,:focus-visible) { border-color: #0090ff; background: #eff8ff; }
 .penguin-guide-hint[hidden] { display: none; }
 .penguin-guide-hint { position: absolute; z-index: 6; display: flex; align-items: center; justify-content: center; gap: 3px; width: 33px; height: 19px; padding: 0; border: 2px solid #0090ff; background: #eff8ff; transform: translate(-50%, -100%); pointer-events: none; }
 .penguin-guide-hint::after { position: absolute; left: 13px; bottom: -7px; width: 7px; height: 7px; background: #0090ff; clip-path: polygon(0 0,100% 0,100% 33%,66% 33%,66% 66%,33% 66%,33% 100%,0 100%); content: ''; }
@@ -20,9 +23,9 @@
 .guide-questions { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 15px; }
 .guide-questions button { padding: 8px 10px; border: 1px solid #d2e5f4; background: #fff; color: #111; font: inherit; font-size: 12px; text-align: left; cursor: pointer; }
 .guide-questions button:is(:hover,:focus-visible), .guide-questions button[aria-pressed="true"] { border-color: #0090ff; background: #eff8ff; color: #0078d2; }
-.guide-close:focus-visible, .guide-questions button:focus-visible, .penguin-guide-launcher:focus-visible { outline: 2px solid #0090ff; outline-offset: 3px; }
+.guide-close:focus-visible, .guide-questions button:focus-visible, .penguin-guide-launcher:focus-visible, .penguin-guide-top:focus-visible { outline: 2px solid #0090ff; outline-offset: 3px; }
 @keyframes penguin-invite { 0%, 100% { filter: drop-shadow(0 0 0 transparent); } 50% { filter: drop-shadow(3px -3px 0 #8ed5ff) drop-shadow(-3px 2px 0 #d9f2ff); } }
 .wandering-penguin { animation: penguin-invite 1.8s steps(2, end) infinite; }
 .wandering-penguin:is(:hover,:focus-visible) { filter: drop-shadow(4px -4px 0 #0090ff) drop-shadow(-4px 3px 0 #b4e6ff); animation-play-state: paused; outline: 2px dashed #0090ff; outline-offset: 3px; }
-@media (max-width: 767px) { .penguin-guide-launcher { right: 16px; bottom: max(70px, calc(env(safe-area-inset-bottom) + 62px)); } }
+@media (max-width: 767px) { .penguin-guide-launcher { right: 16px; bottom: max(70px, calc(env(safe-area-inset-bottom) + 62px)); } .penguin-guide-top { right: 16px; bottom: max(14px, env(safe-area-inset-bottom)); } }
 @media (prefers-reduced-motion: reduce) { .penguin-stage { display: block; } .wandering-penguin { transform: translate3d(25vw, 18vh, 0); animation: none; filter: drop-shadow(2px -2px 0 #8ed5ff); } .penguin-guide-launcher:is(:hover,:focus-visible) { transform: none; } }

@@ -13,11 +13,21 @@
   launcher.setAttribute('aria-controls', 'penguin-guide');
   launcher.setAttribute('aria-expanded', 'false');
   launcher.innerHTML = `<img src="${prefix}assets/penguin/pg_run_to_R-v3.svg" alt=""><span aria-hidden="true">?</span>`;
+  const existingTopButton = document.querySelector('#top-button');
+  const topButton = existingTopButton || document.createElement('button');
+  if (!existingTopButton) {
+    topButton.type = 'button';
+    topButton.className = 'penguin-guide-top';
+    topButton.setAttribute('aria-label', '맨 위로 이동');
+    topButton.innerHTML = '<span class="penguin-guide-top-arrow" aria-hidden="true"></span><span aria-hidden="true">TOP</span>';
+    topButton.hidden = true;
+  }
   const guide = document.createElement('section');
   guide.className = 'penguin-guide'; guide.id = 'penguin-guide'; guide.hidden = true;
   guide.setAttribute('role', 'dialog'); guide.setAttribute('aria-labelledby', 'guide-title');
   guide.innerHTML = `<header class="guide-header"><div><p>FIRST PENGUIN</p><h2 id="guide-title">펭귄에게 물어보기</h2></div><button class="guide-close" type="button" aria-label="안내창 닫기">×</button></header><div class="guide-body"><div class="guide-answer" aria-live="polite"><p>안녕하세요! 궁금한 질문을 골라주시면 펭귄이 안내해 드릴게요.</p></div><div class="guide-questions" aria-label="질문 선택"><button type="button" data-answer="about">어떤 기획자인가요?</button><button type="button" data-answer="project">프로젝트를 보여주세요</button><button type="button" data-answer="documents">이력서를 보고 싶어요</button><button type="button" data-answer="contact">어떻게 연락하나요?</button></div></div>`;
-  document.body.append(launcher, guide);
+  if (existingTopButton) document.body.append(launcher, guide);
+  else document.body.append(launcher, topButton, guide);
   const answer = guide.querySelector('.guide-answer');
   const close = guide.querySelector('.guide-close');
   const replies = {
@@ -37,12 +47,18 @@
   };
   const updateLauncher = () => {
     launcher.hidden = heroVisible();
-    const top = document.querySelector('#top-button');
-    if (top && getComputedStyle(top).opacity !== '0') {
-      const rect = top.getBoundingClientRect();
+    if (topButton && !topButton.hidden && getComputedStyle(topButton).opacity !== '0') {
+      const rect = topButton.getBoundingClientRect();
       launcher.style.right = `${Math.max(12, innerWidth - rect.right)}px`;
       launcher.style.bottom = `${Math.max(74, innerHeight - rect.top + 12)}px`;
     } else { launcher.style.right = ''; launcher.style.bottom = ''; }
+  };
+  const updateTopButton = () => {
+    if (existingTopButton) return;
+    const visible = scrollY > Math.max(240, innerHeight * .45);
+    topButton.hidden = !visible;
+    topButton.setAttribute('aria-hidden', String(!visible));
+    topButton.tabIndex = visible ? 0 : -1;
   };
   const updateHint = () => {
     if (!hint || !heroStage || !heroPenguin) return;
@@ -72,14 +88,21 @@
   };
   const open = source => {
     cancelAnimationFrame(frame); opener = source; guide.hidden = false; launcher.setAttribute('aria-expanded', 'true');
-    heroPenguin?.setAttribute('aria-expanded', 'true'); position(); close.focus();
+    heroPenguin?.setAttribute('aria-expanded', 'true');
+    heroPenguin?.dispatchEvent(new CustomEvent('penguin-guide-change', { detail: { open: true } }));
+    position(); close.focus();
   };
   const dismiss = () => {
     guide.hidden = true; cancelAnimationFrame(frame); launcher.setAttribute('aria-expanded', 'false');
     heroPenguin?.setAttribute('aria-expanded', 'false');
+    heroPenguin?.dispatchEvent(new CustomEvent('penguin-guide-change', { detail: { open: false } }));
     (opener === heroPenguin && heroVisible() ? heroPenguin : launcher).focus({ preventScroll: true });
   };
   launcher.addEventListener('click', () => open(launcher));
+  if (!existingTopButton) topButton.addEventListener('click', () => {
+    scrollTo({ top: 0, behavior: matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth' });
+    document.querySelector('.minimal-logo, .site-header .brand')?.focus({ preventScroll: true });
+  });
   heroPenguin?.addEventListener('click', () => open(heroPenguin));
   heroPenguin?.addEventListener('keydown', event => { if (event.key === 'Enter' || event.key === ' ') { event.preventDefault(); open(heroPenguin); } });
   close.addEventListener('click', dismiss);
@@ -93,9 +116,9 @@
     answer.replaceChildren(text, link);
     guide.querySelectorAll('[data-answer]').forEach(item => item.setAttribute('aria-pressed', String(item === button)));
   });
-  window.addEventListener('scroll', updateLauncher, { passive: true });
-  window.addEventListener('resize', updateLauncher);
-  updateLauncher();
+  window.addEventListener('scroll', () => { updateTopButton(); updateLauncher(); }, { passive: true });
+  window.addEventListener('resize', () => { updateTopButton(); updateLauncher(); });
+  updateTopButton(); updateLauncher();
   if (hint) {
     if ('IntersectionObserver' in window) {
       const observer = new IntersectionObserver(entries => {
