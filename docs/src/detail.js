@@ -15,7 +15,8 @@ function detailParagraphs(host, value) {
     return paragraph;
   }));
 }
-if (detailItem && detailItem.id !== 'naver-map') {
+const availableDetailIds = new Set(['naver-map', 'delight-insight-2026']);
+if (detailItem && !availableDetailIds.has(detailItem.id)) {
   const main = document.querySelector('.detail-main');
   if (main) {
     main.replaceChildren();
@@ -72,13 +73,22 @@ if (detailItem && detailItem.id !== 'naver-map') {
   for (const [path, label] of [[detailItem.summaryPdfPath, '요약본 PDF 다운로드 ↓'], [detailItem.pdfPath, '전체 PDF 다운로드 ↓']]) {
     if (!path || !downloadHost) continue;
     const link = document.createElement('a');
-    link.className = 'detail-button'; link.href = detailPath(path); link.download = '';
+    link.className = 'detail-button'; link.href = detailPath(path);
+    if (/^https?:/.test(path)) { link.target = '_blank'; link.rel = 'noopener'; }
+    else link.download = '';
     link.textContent = label; downloadHost.append(link);
   }
   const relatedId = detailItem.kind === 'storyboard' ? detailItem.sourceId : detailItem.storyboardId;
   const relatedItem = window.siteContent.items.find((item) => item.id === relatedId);
   const relatedHost = document.querySelector('#detail-related');
   relatedHost?.replaceChildren();
+  if (detailItem.websiteUrl && relatedHost) {
+    const websiteLink = document.createElement('a');
+    websiteLink.className = 'detail-button'; websiteLink.href = detailItem.websiteUrl;
+    websiteLink.target = '_blank'; websiteLink.rel = 'noopener';
+    websiteLink.textContent = '브랜딩 웹사이트 바로가기 ↗';
+    relatedHost.append(websiteLink);
+  }
   if (relatedItem && relatedItem.id === 'naver-map' && relatedHost) {
     const link = document.createElement('a'); link.className = 'detail-button';
     link.href = window.siteCatalog.detailUrl(relatedItem, detailReturnFilter, '../');

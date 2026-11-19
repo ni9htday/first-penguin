@@ -202,7 +202,8 @@
   const featuredOrder = ['delight-insight-2026', 'floreter', 'naver-map', 'moa'];
   const categoryLabels = { all: 'All', 'service-planning': '기획서', 'service-improvement': '리뉴얼', proposal: '제안서', report: '보고서', storyboard: '스토리보드' };
   const projectUrl = (item, filter = 'all') => `${item.detailPath}?from=${encodeURIComponent(filter)}`;
-  const isAvailable = item => item.id === 'naver-map';
+  const availableProjects = new Set(['naver-map', 'delight-insight-2026']);
+  const isAvailable = item => availableProjects.has(item.id);
   const period = item => item.period?.trim().replace(/[\u2013\u2014]/g, '~') || '기간 미등록';
   const label = item => window.siteCatalog?.label(item) || (item.kind === 'storyboard' ? '스토리보드' : item.keywords?.[0] || '');
   const visual = item => item.thumbnail?.src
