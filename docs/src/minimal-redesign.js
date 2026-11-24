@@ -209,7 +209,7 @@
   const visual = item => item.thumbnail?.src
     ? `<figure class="project-visual has-image"><img src="${item.thumbnail.src}" alt="${item.thumbnail.alt || ''}" /></figure>`
     : `<figure class="project-visual visual-${item.id}"><span>${item.name}</span><i aria-hidden="true"></i></figure>`;
-  const selectedCard = (item, index) => `<article class="selected-item${isAvailable(item) ? '' : ' is-pending'}"><a ${isAvailable(item) ? `href="${projectUrl(item)}" aria-label="${item.name} 프로젝트 보러가기"` : 'aria-disabled="true"'}><div class="project-meta"><span><small>No.</small><b>${String(index + 1).padStart(2, '0')}</b></span><span><small>Type</small><b>${label(item)}</b></span><span><small>Period</small><b>${period(item).replace('~', '<br />~ ')}</b></span></div>${visual(item)}<div class="project-copy"><h3>${item.name}</h3><p>${item.shortIntro || item.summary}</p><p class="project-role"><span>Role</span><b>${item.role || ''}</b></p>${isAvailable(item) ? '<span class="project-link">프로젝트 보러가기 &gt;</span>' : '<span class="project-status">준비 중</span>'}</div></a></article>`;
+  const selectedCard = (item, index) => `<article class="selected-item${isAvailable(item) ? '' : ' is-pending'}"><a href="${projectUrl(item)}" aria-label="${item.name} ${isAvailable(item) ? '프로젝트 보러가기' : '준비 중 안내 보기'}"><div class="project-meta"><span><small>No.</small><b>${String(index + 1).padStart(2, '0')}</b></span><span><small>Type</small><b>${label(item)}</b></span><span><small>Period</small><b>${period(item).replace('~', '<br />~ ')}</b></span></div>${visual(item)}<div class="project-copy"><h3>${item.name}</h3><p>${item.shortIntro || item.summary}</p><p class="project-role"><span>Role</span><b>${item.role || ''}</b></p>${isAvailable(item) ? '<span class="project-link">프로젝트 보러가기 &gt;</span>' : '<span class="project-status">준비 중</span>'}</div></a></article>`;
 
   const selected = document.querySelector('#selected-list');
   if (selected) {
@@ -238,7 +238,7 @@
     const render = () => {
       const visible = items.filter(matches);
       count.textContent = `${String(visible.length).padStart(2, '0')} projects`;
-      list.innerHTML = visible.map((item, index) => `<article class="catalog-item${isAvailable(item) ? '' : ' is-pending'}"><a ${isAvailable(item) ? `href="${projectUrl(item, active)}"` : 'aria-disabled="true"'}>${visual(item)}<div class="catalog-info"><span class="catalog-number">${String(index + 1).padStart(2, '0')}</span><span class="catalog-type">${label(item)}</span><span class="catalog-period">${period(item)}</span><h2 class="catalog-name">${item.name}</h2><p class="catalog-summary">${item.shortIntro || item.summary}</p>${isAvailable(item) ? '' : '<span class="project-status">준비 중</span>'}</div></a></article>`).join('');
+      list.innerHTML = visible.map((item, index) => `<article class="catalog-item${isAvailable(item) ? '' : ' is-pending'}"><a href="${projectUrl(item, active)}" aria-label="${item.name} ${isAvailable(item) ? '프로젝트 보러가기' : '준비 중 안내 보기'}">${visual(item)}<div class="catalog-info"><span class="catalog-number">${String(index + 1).padStart(2, '0')}</span><span class="catalog-type">${label(item)}</span><span class="catalog-period">${period(item)}</span><h2 class="catalog-name">${item.name}</h2><p class="catalog-summary">${item.shortIntro || item.summary}</p>${isAvailable(item) ? '' : '<span class="project-status">준비 중</span>'}</div></a></article>`).join('');
     };
     filters.addEventListener('click', event => {
       const button = event.target.closest('button[data-filter]');

@@ -205,7 +205,7 @@ figure, p, h1, h2, h3, dl, dd { margin: 0; }
 .catalog-summary { font-size: 13px; line-height: 1.55; }
 .project-status { display: inline-block; width: fit-content; margin-top: 12px; color: #777; font-size: 12px; line-height: 1.5; }
 .catalog-info .project-status { grid-column: 1 / -1; margin-top: 0; }
-.is-pending a { cursor: default; }
+.is-pending a { cursor: pointer; }
 .selected-item.is-pending a:hover .project-copy h3, .catalog-item.is-pending a:hover .catalog-name { color: inherit; }
 .selected-item.is-pending a:hover .project-visual img, .selected-item.is-pending a:hover .project-visual i, .catalog-item.is-pending a:hover .project-visual img { transform: none; }
 
